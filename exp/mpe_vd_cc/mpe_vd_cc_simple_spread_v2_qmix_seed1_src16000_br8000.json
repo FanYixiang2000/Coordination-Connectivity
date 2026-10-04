@@ -1,0 +1,250 @@
+{
+  "scenario": "simple_spread_v2",
+  "algo": "qmix",
+  "config": {
+    "scenario": "simple_spread_v2",
+    "seed": 1,
+    "source_episodes": 16000,
+    "branch_episodes": 8000,
+    "eval_episodes": 100,
+    "hidden_dim": 128,
+    "mixing_dim": 32,
+    "lr": 0.0005,
+    "gamma": 0.99,
+    "batch_size": 256,
+    "buffer_size": 50000,
+    "epsilon_start": 1.0,
+    "epsilon_branch": 0.1,
+    "epsilon_end": 0.05,
+    "epsilon_decay_updates": 100000,
+    "target_update_interval": 200
+  },
+  "curves": {
+    "source": [
+      {
+        "episode": 4000,
+        "mean_return": -132.17340951389318,
+        "std_return": 37.40158605308043
+      },
+      {
+        "episode": 8000,
+        "mean_return": -132.17340951389318,
+        "std_return": 37.40158605308043
+      },
+      {
+        "episode": 12000,
+        "mean_return": -132.17340951389318,
+        "std_return": 37.40158605308043
+      },
+      {
+        "episode": 16000,
+        "mean_return": -132.17340951389318,
+        "std_return": 37.40158605308043
+      }
+    ],
+    "branch_a": [
+      {
+        "episode": 2000,
+        "mean_return": -142.95336203096366,
+        "std_return": 39.32857562529921
+      },
+      {
+        "episode": 4000,
+        "mean_return": -142.95336203096366,
+        "std_return": 39.32857562529921
+      },
+      {
+        "episode": 6000,
+        "mean_return": -142.95336203096366,
+        "std_return": 39.32857562529921
+      },
+      {
+        "episode": 8000,
+        "mean_return": -142.95336203096366,
+        "std_return": 39.32857562529921
+      }
+    ],
+    "branch_b": [
+      {
+        "episode": 2000,
+        "mean_return": -143.55233146600116,
+        "std_return": 38.62929582959569
+      },
+      {
+        "episode": 4000,
+        "mean_return": -143.55233146600116,
+        "std_return": 38.62929582959569
+      },
+      {
+        "episode": 6000,
+        "mean_return": -143.55233146600116,
+        "std_return": 38.62929582959569
+      },
+      {
+        "episode": 8000,
+        "mean_return": -143.55233146600116,
+        "std_return": 38.62929582959569
+      }
+    ],
+    "scratch": [
+      {
+        "episode": 6000,
+        "mean_return": -146.9940829389252,
+        "std_return": 36.66268030111265
+      },
+      {
+        "episode": 12000,
+        "mean_return": -146.9940829389252,
+        "std_return": 36.66268030111265
+      },
+      {
+        "episode": 18000,
+        "mean_return": -146.9940829389252,
+        "std_return": 36.66268030111265
+      },
+      {
+        "episode": 24000,
+        "mean_return": -146.9940829389252,
+        "std_return": 36.66268030111265
+      }
+    ]
+  },
+  "endpoint_eval": {
+    "branch_a": {
+      "mean_return": -140.9666726671995,
+      "std_return": 44.134204518465076
+    },
+    "branch_b": {
+      "mean_return": -141.78928664461458,
+      "std_return": 44.03206868818577
+    },
+    "scratch": {
+      "mean_return": -150.88274033737804,
+      "std_return": 40.58338649446658
+    }
+  },
+  "paths": [
+    {
+      "name": "QMIX same-source A <-> B",
+      "points": [
+        {
+          "alpha": 0.0,
+          "mean_return": -138.99041561190435,
+          "std_return": 42.19862548340264
+        },
+        {
+          "alpha": 0.1,
+          "mean_return": -138.69473480910509,
+          "std_return": 46.53332460494159
+        },
+        {
+          "alpha": 0.2,
+          "mean_return": -143.75102022329327,
+          "std_return": 44.31320526184425
+        },
+        {
+          "alpha": 0.3,
+          "mean_return": -146.7461746245633,
+          "std_return": 41.66483726409492
+        },
+        {
+          "alpha": 0.4,
+          "mean_return": -143.94453362867498,
+          "std_return": 44.049152869404864
+        },
+        {
+          "alpha": 0.5,
+          "mean_return": -141.01933822358805,
+          "std_return": 42.270794118341215
+        },
+        {
+          "alpha": 0.6,
+          "mean_return": -141.36682567296182,
+          "std_return": 38.49614306177401
+        },
+        {
+          "alpha": 0.7,
+          "mean_return": -132.67329429998324,
+          "std_return": 39.03648925344305
+        },
+        {
+          "alpha": 0.8,
+          "mean_return": -136.0524034696683,
+          "std_return": 41.32005582296528
+        },
+        {
+          "alpha": 0.9,
+          "mean_return": -146.8431543468222,
+          "std_return": 44.52245538717188
+        },
+        {
+          "alpha": 1.0,
+          "mean_return": -138.26471507748374,
+          "std_return": 43.363362859823845
+        }
+      ],
+      "return_barrier": 7.8527387349178355
+    },
+    {
+      "name": "QMIX branch-A <-> scratch",
+      "points": [
+        {
+          "alpha": 0.0,
+          "mean_return": -138.99041561190435,
+          "std_return": 42.19862548340264
+        },
+        {
+          "alpha": 0.1,
+          "mean_return": -134.90233741761608,
+          "std_return": 45.691916376912715
+        },
+        {
+          "alpha": 0.2,
+          "mean_return": -142.4698248502894,
+          "std_return": 45.63101890193436
+        },
+        {
+          "alpha": 0.3,
+          "mean_return": -150.26876673887008,
+          "std_return": 43.92721632738604
+        },
+        {
+          "alpha": 0.4,
+          "mean_return": -147.39519469628004,
+          "std_return": 45.71077050236125
+        },
+        {
+          "alpha": 0.5,
+          "mean_return": -121.01191464899773,
+          "std_return": 39.977444494668234
+        },
+        {
+          "alpha": 0.6,
+          "mean_return": -117.1008338292058,
+          "std_return": 38.942652984793334
+        },
+        {
+          "alpha": 0.7,
+          "mean_return": -137.31001693639183,
+          "std_return": 42.37878244252588
+        },
+        {
+          "alpha": 0.8,
+          "mean_return": -154.4323949657188,
+          "std_return": 36.75696317677555
+        },
+        {
+          "alpha": 0.9,
+          "mean_return": -146.02683964721277,
+          "std_return": 39.6926493432976
+        },
+        {
+          "alpha": 1.0,
+          "mean_return": -150.61907590639115,
+          "std_return": 34.12743363958651
+        }
+      ],
+      "return_barrier": 3.813319059327654
+    }
+  ]
+}

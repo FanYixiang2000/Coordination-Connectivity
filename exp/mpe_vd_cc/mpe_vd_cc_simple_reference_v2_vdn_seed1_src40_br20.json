@@ -1,0 +1,190 @@
+{
+  "scenario": "simple_reference_v2",
+  "algo": "vdn",
+  "config": {
+    "scenario": "simple_reference_v2",
+    "seed": 1,
+    "source_episodes": 40,
+    "branch_episodes": 20,
+    "eval_episodes": 5,
+    "hidden_dim": 64,
+    "mixing_dim": 32,
+    "lr": 0.0005,
+    "gamma": 0.99,
+    "batch_size": 256,
+    "buffer_size": 50000,
+    "epsilon_start": 1.0,
+    "epsilon_branch": 0.1,
+    "epsilon_end": 0.05,
+    "epsilon_decay_updates": 10000,
+    "target_update_interval": 200
+  },
+  "curves": {
+    "source": [
+      {
+        "episode": 40,
+        "mean_return": -61.94155855543213,
+        "std_return": 17.04810528702822
+      }
+    ],
+    "branch_a": [
+      {
+        "episode": 20,
+        "mean_return": -57.82227207341204,
+        "std_return": 18.769036660136557
+      }
+    ],
+    "branch_b": [
+      {
+        "episode": 20,
+        "mean_return": -53.923201566590635,
+        "std_return": 18.42541804126832
+      }
+    ],
+    "scratch": [
+      {
+        "episode": 60,
+        "mean_return": -56.63451208025721,
+        "std_return": 19.151989036581636
+      }
+    ]
+  },
+  "endpoint_eval": {
+    "branch_a": {
+      "mean_return": -38.5259404076988,
+      "std_return": 14.215301579867669
+    },
+    "branch_b": {
+      "mean_return": -53.88707657760473,
+      "std_return": 8.747708922999491
+    },
+    "scratch": {
+      "mean_return": -50.17754492863317,
+      "std_return": 8.974723600323664
+    }
+  },
+  "paths": [
+    {
+      "name": "VDN same-source A <-> B",
+      "points": [
+        {
+          "alpha": 0.0,
+          "mean_return": -53.52519404919127,
+          "std_return": 11.502946958707879
+        },
+        {
+          "alpha": 0.1,
+          "mean_return": -51.518617557792346,
+          "std_return": 11.562621000841665
+        },
+        {
+          "alpha": 0.2,
+          "mean_return": -55.110167625934196,
+          "std_return": 14.929518526932329
+        },
+        {
+          "alpha": 0.3,
+          "mean_return": -43.635195972964524,
+          "std_return": 23.323919876007658
+        },
+        {
+          "alpha": 0.4,
+          "mean_return": -55.399759920804186,
+          "std_return": 10.634538543967018
+        },
+        {
+          "alpha": 0.5,
+          "mean_return": -47.012496415054486,
+          "std_return": 17.13048077874797
+        },
+        {
+          "alpha": 0.6,
+          "mean_return": -36.02256840722517,
+          "std_return": 12.126991437074869
+        },
+        {
+          "alpha": 0.7,
+          "mean_return": -49.28256794834326,
+          "std_return": 11.658358353603926
+        },
+        {
+          "alpha": 0.8,
+          "mean_return": -45.09413204585162,
+          "std_return": 15.503695249298737
+        },
+        {
+          "alpha": 0.9,
+          "mean_return": -71.38908309875546,
+          "std_return": 13.448237844873306
+        },
+        {
+          "alpha": 1.0,
+          "mean_return": -60.191527233544,
+          "std_return": 22.771579921776915
+        }
+      ],
+      "return_barrier": 11.197555865211463
+    },
+    {
+      "name": "VDN branch-A <-> scratch",
+      "points": [
+        {
+          "alpha": 0.0,
+          "mean_return": -53.52519404919127,
+          "std_return": 11.502946958707879
+        },
+        {
+          "alpha": 0.1,
+          "mean_return": -54.20266346035894,
+          "std_return": 10.232821832562415
+        },
+        {
+          "alpha": 0.2,
+          "mean_return": -83.2219676740586,
+          "std_return": 14.808406141500402
+        },
+        {
+          "alpha": 0.3,
+          "mean_return": -81.7395483283443,
+          "std_return": 18.68789372028445
+        },
+        {
+          "alpha": 0.4,
+          "mean_return": -80.48707760382325,
+          "std_return": 25.236782690475295
+        },
+        {
+          "alpha": 0.5,
+          "mean_return": -76.77204956991555,
+          "std_return": 27.02968959445812
+        },
+        {
+          "alpha": 0.6,
+          "mean_return": -65.5383560336061,
+          "std_return": 23.759129501070287
+        },
+        {
+          "alpha": 0.7,
+          "mean_return": -73.99009012995603,
+          "std_return": 13.170766478090856
+        },
+        {
+          "alpha": 0.8,
+          "mean_return": -49.42989993660859,
+          "std_return": 23.016943459934254
+        },
+        {
+          "alpha": 0.9,
+          "mean_return": -63.198773547334255,
+          "std_return": 17.090489348546434
+        },
+        {
+          "alpha": 1.0,
+          "mean_return": -64.53932331580421,
+          "std_return": 25.625115320035082
+        }
+      ],
+      "return_barrier": 18.682644358254393
+    }
+  ]
+}

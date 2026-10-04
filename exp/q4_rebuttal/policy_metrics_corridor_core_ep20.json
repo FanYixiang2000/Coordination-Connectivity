@@ -1,0 +1,2911 @@
+{
+  "corridor": {
+    "map": "corridor",
+    "seeds": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "alphas": [
+      0.0,
+      0.5,
+      1.0
+    ],
+    "episodes_per_alpha": 20,
+    "paths": {
+      "P1": {
+        "description": "MAPPO-ct \u2192 M2H (same source)",
+        "method_a": "mappo_to_mappo_shared_stage2",
+        "method_b": "mappo_to_happo_nonshared_stage2",
+        "seeds": [
+          {
+            "seed": 1,
+            "method_a": "mappo_to_mappo_shared_stage2",
+            "method_b": "mappo_to_happo_nonshared_stage2",
+            "description": "MAPPO-ct \u2192 M2H (same source)",
+            "existing_barrier": 0.07999999999999996,
+            "existing_wr": [
+              1.0,
+              1.0,
+              1.0,
+              0.92,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "weight_metrics": {
+              "mean_l2": 14.944499651590982,
+              "mean_normalized_l2": 0.17693303525447845,
+              "mean_cosine": 0.9374541640281677,
+              "per_agent": [
+                {
+                  "l2": 14.65766429901123,
+                  "normalized_l2": 0.17340245842933655,
+                  "cosine": 0.9399187564849854
+                },
+                {
+                  "l2": 14.830850601196289,
+                  "normalized_l2": 0.17564605176448822,
+                  "cosine": 0.9383783340454102
+                },
+                {
+                  "l2": 14.830473899841309,
+                  "normalized_l2": 0.17546746134757996,
+                  "cosine": 0.9384804964065552
+                },
+                {
+                  "l2": 15.30174446105957,
+                  "normalized_l2": 0.18078318238258362,
+                  "cosine": 0.934666633605957
+                },
+                {
+                  "l2": 15.087763786315918,
+                  "normalized_l2": 0.1789829432964325,
+                  "cosine": 0.9360577464103699
+                },
+                {
+                  "l2": 14.958500862121582,
+                  "normalized_l2": 0.1773161143064499,
+                  "cosine": 0.9372230172157288
+                }
+              ]
+            },
+            "alpha_metrics": [
+              {
+                "kl_ab": 0.8989825311766118,
+                "kl_ba": 1.0189752361668227,
+                "sym_kl": 0.9589788836717114,
+                "js": 0.12890314925082555,
+                "tv": 0.26928554055626375,
+                "argmax_disagree": 0.2810578105781058,
+                "joint_sym_kl": 5.753873302030274,
+                "joint_js_sum": 0.7734188955049524,
+                "joint_tv_bound": 0.8208617943959533,
+                "joint_any_argmax_disagree": 0.7867158671586716,
+                "probe_win_rate": 1.0,
+                "episodes": 20,
+                "steps": 1355,
+                "agent_steps": 8130,
+                "alpha": 0.0
+              },
+              {
+                "kl_ab": 0.7471111523399049,
+                "kl_ba": 0.7025542487081496,
+                "sym_kl": 0.7248327005240283,
+                "js": 0.1018232318521357,
+                "tv": 0.22735246046512653,
+                "argmax_disagree": 0.23362875430822255,
+                "joint_sym_kl": 4.348996203144157,
+                "joint_js_sum": 0.6109393911128095,
+                "joint_tv_bound": 0.7870784369020061,
+                "joint_any_argmax_disagree": 0.7193500738552437,
+                "probe_win_rate": 1.0,
+                "episodes": 20,
+                "steps": 1354,
+                "agent_steps": 8124,
+                "alpha": 0.5
+              },
+              {
+                "kl_ab": 0.7175777673248848,
+                "kl_ba": 0.6245941280205715,
+                "sym_kl": 0.6710859476727267,
+                "js": 0.09578994830467569,
+                "tv": 0.21680273818926526,
+                "argmax_disagree": 0.2177299703264095,
+                "joint_sym_kl": 4.02651568603637,
+                "joint_js_sum": 0.5747396898280532,
+                "joint_tv_bound": 0.7712222299820398,
+                "joint_any_argmax_disagree": 0.6995548961424333,
+                "probe_win_rate": 1.0,
+                "episodes": 20,
+                "steps": 1348,
+                "agent_steps": 8088,
+                "alpha": 1.0
+              }
+            ]
+          },
+          {
+            "seed": 2,
+            "method_a": "mappo_to_mappo_shared_stage2",
+            "method_b": "mappo_to_happo_nonshared_stage2",
+            "description": "MAPPO-ct \u2192 M2H (same source)",
+            "existing_barrier": 0.07999999999999996,
+            "existing_wr": [
+              1.0,
+              1.0,
+              0.92,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "weight_metrics": {
+              "mean_l2": 14.816900412241617,
+              "mean_normalized_l2": 0.1783970147371292,
+              "mean_cosine": 0.9364142119884491,
+              "per_agent": [
+                {
+                  "l2": 15.028020858764648,
+                  "normalized_l2": 0.18097761273384094,
+                  "cosine": 0.9345716238021851
+                },
+                {
+                  "l2": 14.74455738067627,
+                  "normalized_l2": 0.17737258970737457,
+                  "cosine": 0.9371312260627747
+                },
+                {
+                  "l2": 14.494712829589844,
+                  "normalized_l2": 0.17468568682670593,
+                  "cosine": 0.9390669465065002
+                },
+                {
+                  "l2": 14.854199409484863,
+                  "normalized_l2": 0.1788112372159958,
+                  "cosine": 0.936120867729187
+                },
+                {
+                  "l2": 14.916353225708008,
+                  "normalized_l2": 0.17962072789669037,
+                  "cosine": 0.935548722743988
+                },
+                {
+                  "l2": 14.863558769226074,
+                  "normalized_l2": 0.17891423404216766,
+                  "cosine": 0.9360458850860596
+                }
+              ]
+            },
+            "alpha_metrics": [
+              {
+                "kl_ab": 0.8600446497645968,
+                "kl_ba": 0.9333581841802908,
+                "sym_kl": 0.8967014169724511,
+                "js": 0.11933304016931146,
+                "tv": 0.2491207617265642,
+                "argmax_disagree": 0.2660619803476946,
+                "joint_sym_kl": 5.380208501834685,
+                "joint_js_sum": 0.7159982410158651,
+                "joint_tv_bound": 0.8195823441683959,
+                "joint_any_argmax_disagree": 0.7876039304610734,
+                "probe_win_rate": 1.0,
+                "episodes": 20,
+                "steps": 1323,
+                "agent_steps": 7938,
+                "alpha": 0.0
+              },
+              {
+                "kl_ab": 0.7047247220935834,
+                "kl_ba": 0.6952879210028431,
+                "sym_kl": 0.7000063215482157,
+                "js": 0.09376422386380441,
+                "tv": 0.20959861467158625,
+                "argmax_disagree": 0.2190982776089159,
+                "joint_sym_kl": 4.2000379292892704,
+                "joint_js_sum": 0.5625853431828245,
+                "joint_tv_bound": 0.7660751314713107,
+                "joint_any_argmax_disagree": 0.7082066869300911,
+                "probe_win_rate": 1.0,
+                "episodes": 20,
+                "steps": 1316,
+                "agent_steps": 7896,
+                "alpha": 0.5
+              },
+              {
+                "kl_ab": 0.8312515428869661,
+                "kl_ba": 0.6640291625269185,
+                "sym_kl": 0.7476403527069412,
+                "js": 0.0990129630783531,
+                "tv": 0.219402895725768,
+                "argmax_disagree": 0.22707100591715976,
+                "joint_sym_kl": 4.485842116241649,
+                "joint_js_sum": 0.5940777784701184,
+                "joint_tv_bound": 0.7922914212126565,
+                "joint_any_argmax_disagree": 0.7396449704142012,
+                "probe_win_rate": 1.0,
+                "episodes": 20,
+                "steps": 1352,
+                "agent_steps": 8112,
+                "alpha": 1.0
+              }
+            ]
+          },
+          {
+            "seed": 3,
+            "method_a": "mappo_to_mappo_shared_stage2",
+            "method_b": "mappo_to_happo_nonshared_stage2",
+            "description": "MAPPO-ct \u2192 M2H (same source)",
+            "existing_barrier": 0.07999999999999996,
+            "existing_wr": [
+              1.0,
+              1.0,
+              0.92,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "weight_metrics": {
+              "mean_l2": 15.466174443562826,
+              "mean_normalized_l2": 0.1863720491528511,
+              "mean_cosine": 0.9305744171142578,
+              "per_agent": [
+                {
+                  "l2": 15.446815490722656,
+                  "normalized_l2": 0.1865423321723938,
+                  "cosine": 0.9304971098899841
+                },
+                {
+                  "l2": 15.464455604553223,
+                  "normalized_l2": 0.1863134652376175,
+                  "cosine": 0.930615246295929
+                },
+                {
+                  "l2": 15.708542823791504,
+                  "normalized_l2": 0.1888028085231781,
+                  "cosine": 0.928716242313385
+                },
+                {
+                  "l2": 15.646766662597656,
+                  "normalized_l2": 0.1882474720478058,
+                  "cosine": 0.9291452765464783
+                },
+                {
+                  "l2": 15.303790092468262,
+                  "normalized_l2": 0.18455058336257935,
+                  "cosine": 0.931941032409668
+                },
+                {
+                  "l2": 15.226675987243652,
+                  "normalized_l2": 0.1837756335735321,
+                  "cosine": 0.9325315952301025
+                }
+              ]
+            },
+            "alpha_metrics": [
+              {
+                "kl_ab": 1.1473543673206814,
+                "kl_ba": 1.0777047368281023,
+                "sym_kl": 1.1125295520743885,
+                "js": 0.1432108067446701,
+                "tv": 0.2972162841656328,
+                "argmax_disagree": 0.31297522688251167,
+                "joint_sym_kl": 6.675177312446377,
+                "joint_js_sum": 0.8592648404680214,
+                "joint_tv_bound": 0.8603204677293717,
+                "joint_any_argmax_disagree": 0.8292862398822664,
+                "probe_win_rate": 1.0,
+                "episodes": 20,
+                "steps": 1359,
+                "agent_steps": 8154,
+                "alpha": 0.0
+              },
+              {
+                "kl_ab": 0.9361252122070406,
+                "kl_ba": 0.8111106590539158,
+                "sym_kl": 0.8736179356304723,
+                "js": 0.11572072300777594,
+                "tv": 0.2542675465205796,
+                "argmax_disagree": 0.2547878787878788,
+                "joint_sym_kl": 5.241707613782861,
+                "joint_js_sum": 0.6943243380466528,
+                "joint_tv_bound": 0.836448874809302,
+                "joint_any_argmax_disagree": 0.7694545454545455,
+                "probe_win_rate": 1.0,
+                "episodes": 20,
+                "steps": 1375,
+                "agent_steps": 8250,
+                "alpha": 0.5
+              },
+              {
+                "kl_ab": 1.1265335716506064,
+                "kl_ba": 0.784334415650708,
+                "sym_kl": 0.9554339936506634,
+                "js": 0.12521244034302662,
+                "tv": 0.2737145539497169,
+                "argmax_disagree": 0.2857142857142857,
+                "joint_sym_kl": 5.732603961903964,
+                "joint_js_sum": 0.7512746420581586,
+                "joint_tv_bound": 0.8640620934804482,
+                "joint_any_argmax_disagree": 0.8080586080586081,
+                "probe_win_rate": 1.0,
+                "episodes": 20,
+                "steps": 1365,
+                "agent_steps": 8190,
+                "alpha": 1.0
+              }
+            ]
+          },
+          {
+            "seed": 4,
+            "method_a": "mappo_to_mappo_shared_stage2",
+            "method_b": "mappo_to_happo_nonshared_stage2",
+            "description": "MAPPO-ct \u2192 M2H (same source)",
+            "existing_barrier": 0.0,
+            "existing_wr": [
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "weight_metrics": {
+              "mean_l2": 14.757410208384195,
+              "mean_normalized_l2": 0.17718391368786493,
+              "mean_cosine": 0.9372734228769938,
+              "per_agent": [
+                {
+                  "l2": 14.959481239318848,
+                  "normalized_l2": 0.17961131036281586,
+                  "cosine": 0.9355496764183044
+                },
+                {
+                  "l2": 14.794663429260254,
+                  "normalized_l2": 0.17742469906806946,
+                  "cosine": 0.9370868802070618
+                },
+                {
+                  "l2": 14.349844932556152,
+                  "normalized_l2": 0.17258431017398834,
+                  "cosine": 0.9405456185340881
+                },
+                {
+                  "l2": 14.781728744506836,
+                  "normalized_l2": 0.17752885818481445,
+                  "cosine": 0.9370444416999817
+                },
+                {
+                  "l2": 14.699244499206543,
+                  "normalized_l2": 0.1765667051076889,
+                  "cosine": 0.9377296566963196
+                },
+                {
+                  "l2": 14.959498405456543,
+                  "normalized_l2": 0.17938759922981262,
+                  "cosine": 0.9356842637062073
+                }
+              ]
+            },
+            "alpha_metrics": [
+              {
+                "kl_ab": 0.8028106830204623,
+                "kl_ba": 0.8368306880236442,
+                "sym_kl": 0.8198206855220538,
+                "js": 0.11196048590189721,
+                "tv": 0.23638887293247862,
+                "argmax_disagree": 0.23576280041797285,
+                "joint_sym_kl": 4.918924113132316,
+                "joint_js_sum": 0.6717629154113834,
+                "joint_tv_bound": 0.7860576894199529,
+                "joint_any_argmax_disagree": 0.7280564263322884,
+                "probe_win_rate": 1.0,
+                "episodes": 20,
+                "steps": 1276,
+                "agent_steps": 7656,
+                "alpha": 0.0
+              },
+              {
+                "kl_ab": 0.6403026307449207,
+                "kl_ba": 0.6065155392845282,
+                "sym_kl": 0.6234090850147246,
+                "js": 0.08792933577012811,
+                "tv": 0.1994200557728516,
+                "argmax_disagree": 0.1908974358974359,
+                "joint_sym_kl": 3.740454510088343,
+                "joint_js_sum": 0.5275760146207689,
+                "joint_tv_bound": 0.7582899026655939,
+                "joint_any_argmax_disagree": 0.6730769230769231,
+                "probe_win_rate": 1.0,
+                "episodes": 20,
+                "steps": 1300,
+                "agent_steps": 7800,
+                "alpha": 0.5
+              },
+              {
+                "kl_ab": 0.6869256310001739,
+                "kl_ba": 0.5398581400213248,
+                "sym_kl": 0.6133918855107519,
+                "js": 0.08917345805656118,
+                "tv": 0.20332704479477054,
+                "argmax_disagree": 0.19469582704876823,
+                "joint_sym_kl": 3.6803513130645022,
+                "joint_js_sum": 0.5350407483393651,
+                "joint_tv_bound": 0.7546621626715011,
+                "joint_any_argmax_disagree": 0.665158371040724,
+                "probe_win_rate": 1.0,
+                "episodes": 20,
+                "steps": 1326,
+                "agent_steps": 7956,
+                "alpha": 1.0
+              }
+            ]
+          }
+        ],
+        "summary": {
+          "n_seeds": 4,
+          "mean_existing_barrier": 0.05999999999999997,
+          "mean_weight_normalized_l2": 0.17972150320808092,
+          "mean_weight_cosine": 0.9354290540019671,
+          "alpha_summary": [
+            {
+              "alpha": 0.0,
+              "mean_js": 0.12585187051667607,
+              "mean_tv": 0.26300286484523483,
+              "mean_sym_kl": 0.9470076345601511,
+              "mean_joint_sym_kl": 5.682045807360913,
+              "mean_action_disagreement": 0.27396445455657126,
+              "mean_probe_win_rate": 1.0
+            },
+            {
+              "alpha": 0.5,
+              "mean_js": 0.09980937862346105,
+              "mean_tv": 0.222659669357536,
+              "mean_sym_kl": 0.7304665106793602,
+              "mean_joint_sym_kl": 4.382799064076158,
+              "mean_action_disagreement": 0.2246030866506133,
+              "mean_probe_win_rate": 1.0
+            },
+            {
+              "alpha": 1.0,
+              "mean_js": 0.10229720244565416,
+              "mean_tv": 0.22831180816488017,
+              "mean_sym_kl": 0.7468880448852707,
+              "mean_joint_sym_kl": 4.481328269311621,
+              "mean_action_disagreement": 0.2313027722516558,
+              "mean_probe_win_rate": 1.0
+            }
+          ]
+        }
+      },
+      "P2": {
+        "description": "MAPPO-ct \u2192 MAPPO-ns (same source)",
+        "method_a": "mappo_to_mappo_shared_stage2",
+        "method_b": "mappo_to_mappo_nonshared_stage2",
+        "seeds": [
+          {
+            "seed": 1,
+            "method_a": "mappo_to_mappo_shared_stage2",
+            "method_b": "mappo_to_mappo_nonshared_stage2",
+            "description": "MAPPO-ct \u2192 MAPPO-ns (same source)",
+            "existing_barrier": 0.0,
+            "existing_wr": [
+              0.99,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "weight_metrics": {
+              "mean_l2": 15.176689465840658,
+              "mean_normalized_l2": 0.17963535835345587,
+              "mean_cosine": 0.9355211555957794,
+              "per_agent": [
+                {
+                  "l2": 14.981382369995117,
+                  "normalized_l2": 0.1773451417684555,
+                  "cosine": 0.9371672868728638
+                },
+                {
+                  "l2": 15.334005355834961,
+                  "normalized_l2": 0.18144045770168304,
+                  "cosine": 0.9342181086540222
+                },
+                {
+                  "l2": 15.155144691467285,
+                  "normalized_l2": 0.17915916442871094,
+                  "cosine": 0.9358453750610352
+                },
+                {
+                  "l2": 14.933527946472168,
+                  "normalized_l2": 0.17665620148181915,
+                  "cosine": 0.9376396536827087
+                },
+                {
+                  "l2": 15.149911880493164,
+                  "normalized_l2": 0.1797720342874527,
+                  "cosine": 0.9355012774467468
+                },
+                {
+                  "l2": 15.50616455078125,
+                  "normalized_l2": 0.18343915045261383,
+                  "cosine": 0.9327552318572998
+                }
+              ]
+            },
+            "alpha_metrics": [
+              {
+                "kl_ab": 1.040641427302221,
+                "kl_ba": 1.2573530543407312,
+                "sym_kl": 1.1489972408214735,
+                "js": 0.14492698511115096,
+                "tv": 0.29748530759298947,
+                "argmax_disagree": 0.3082410824108241,
+                "joint_sym_kl": 6.89398344492884,
+                "joint_js_sum": 0.8695619106669081,
+                "joint_tv_bound": 0.8813866359821974,
+                "joint_any_argmax_disagree": 0.8398523985239852,
+                "probe_win_rate": 1.0,
+                "episodes": 20,
+                "steps": 1355,
+                "agent_steps": 8130,
+                "alpha": 0.0
+              },
+              {
+                "kl_ab": 0.8510102247086346,
+                "kl_ba": 0.9158007114564746,
+                "sym_kl": 0.8834054680825512,
+                "js": 0.1139744794484231,
+                "tv": 0.2495524870721762,
+                "argmax_disagree": 0.25647798742138367,
+                "joint_sym_kl": 5.300432808495319,
+                "joint_js_sum": 0.6838468766905409,
+                "joint_tv_bound": 0.8646115059521122,
+                "joint_any_argmax_disagree": 0.8015094339622642,
+                "probe_win_rate": 1.0,
+                "episodes": 20,
+                "steps": 1325,
+                "agent_steps": 7950,
+                "alpha": 0.5
+              },
+              {
+                "kl_ab": 0.9889162367440658,
+                "kl_ba": 0.8345657250735856,
+                "sym_kl": 0.911740980908827,
+                "js": 0.11569260753011287,
+                "tv": 0.2502877441868857,
+                "argmax_disagree": 0.2504343509555721,
+                "joint_sym_kl": 5.470445885452955,
+                "joint_js_sum": 0.6941556451806787,
+                "joint_tv_bound": 0.8541396979832926,
+                "joint_any_argmax_disagree": 0.7848101265822784,
+                "probe_win_rate": 1.0,
+                "episodes": 20,
+                "steps": 1343,
+                "agent_steps": 8058,
+                "alpha": 1.0
+              }
+            ]
+          },
+          {
+            "seed": 2,
+            "method_a": "mappo_to_mappo_shared_stage2",
+            "method_b": "mappo_to_mappo_nonshared_stage2",
+            "description": "MAPPO-ct \u2192 MAPPO-ns (same source)",
+            "existing_barrier": 0.0,
+            "existing_wr": [
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "weight_metrics": {
+              "mean_l2": 14.948959350585938,
+              "mean_normalized_l2": 0.17981923619906107,
+              "mean_cosine": 0.9353794157505035,
+              "per_agent": [
+                {
+                  "l2": 14.761231422424316,
+                  "normalized_l2": 0.1776529848575592,
+                  "cosine": 0.936941921710968
+                },
+                {
+                  "l2": 14.849637031555176,
+                  "normalized_l2": 0.1783139407634735,
+                  "cosine": 0.9364311695098877
+                },
+                {
+                  "l2": 14.97054386138916,
+                  "normalized_l2": 0.18008621037006378,
+                  "cosine": 0.935190737247467
+                },
+                {
+                  "l2": 15.121920585632324,
+                  "normalized_l2": 0.18194420635700226,
+                  "cosine": 0.9338494539260864
+                },
+                {
+                  "l2": 14.97060775756836,
+                  "normalized_l2": 0.18029478192329407,
+                  "cosine": 0.9350661039352417
+                },
+                {
+                  "l2": 15.019815444946289,
+                  "normalized_l2": 0.18062329292297363,
+                  "cosine": 0.9347971081733704
+                }
+              ]
+            },
+            "alpha_metrics": [
+              {
+                "kl_ab": 0.8332082899890857,
+                "kl_ba": 0.8761339978698149,
+                "sym_kl": 0.8546711439294538,
+                "js": 0.11699139278736914,
+                "tv": 0.24355258976650776,
+                "argmax_disagree": 0.25359032501889645,
+                "joint_sym_kl": 5.12802686357671,
+                "joint_js_sum": 0.7019483567242145,
+                "joint_tv_bound": 0.802787851642038,
+                "joint_any_argmax_disagree": 0.7664399092970522,
+                "probe_win_rate": 1.0,
+                "episodes": 20,
+                "steps": 1323,
+                "agent_steps": 7938,
+                "alpha": 0.0
+              },
+              {
+                "kl_ab": 0.6414750106693958,
+                "kl_ba": 0.6224127465862508,
+                "sym_kl": 0.6319438786278238,
+                "js": 0.08904760243789134,
+                "tv": 0.1989709073103637,
+                "argmax_disagree": 0.20022970903522205,
+                "joint_sym_kl": 3.7916632717669363,
+                "joint_js_sum": 0.5342856146273484,
+                "joint_tv_bound": 0.7444027883867201,
+                "joint_any_argmax_disagree": 0.6600306278713629,
+                "probe_win_rate": 1.0,
+                "episodes": 20,
+                "steps": 1306,
+                "agent_steps": 7836,
+                "alpha": 0.5
+              },
+              {
+                "kl_ab": 0.690262664273544,
+                "kl_ba": 0.5745303602450861,
+                "sym_kl": 0.6323965122593151,
+                "js": 0.09115053121034074,
+                "tv": 0.20613788510240866,
+                "argmax_disagree": 0.2083645443196005,
+                "joint_sym_kl": 3.794379073555882,
+                "joint_js_sum": 0.5469031872620458,
+                "joint_tv_bound": 0.7762577415013642,
+                "joint_any_argmax_disagree": 0.699625468164794,
+                "probe_win_rate": 1.0,
+                "episodes": 20,
+                "steps": 1335,
+                "agent_steps": 8010,
+                "alpha": 1.0
+              }
+            ]
+          },
+          {
+            "seed": 3,
+            "method_a": "mappo_to_mappo_shared_stage2",
+            "method_b": "mappo_to_mappo_nonshared_stage2",
+            "description": "MAPPO-ct \u2192 MAPPO-ns (same source)",
+            "existing_barrier": 0.0,
+            "existing_wr": [
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "weight_metrics": {
+              "mean_l2": 15.508954207102457,
+              "mean_normalized_l2": 0.18704358985026678,
+              "mean_cosine": 0.9300861954689026,
+              "per_agent": [
+                {
+                  "l2": 15.606027603149414,
+                  "normalized_l2": 0.18821197748184204,
+                  "cosine": 0.9292135238647461
+                },
+                {
+                  "l2": 15.431808471679688,
+                  "normalized_l2": 0.18618424236774445,
+                  "cosine": 0.9307404160499573
+                },
+                {
+                  "l2": 15.571105003356934,
+                  "normalized_l2": 0.18769502639770508,
+                  "cosine": 0.9295912384986877
+                },
+                {
+                  "l2": 15.3289794921875,
+                  "normalized_l2": 0.1848520040512085,
+                  "cosine": 0.9317179322242737
+                },
+                {
+                  "l2": 15.42343521118164,
+                  "normalized_l2": 0.18608663976192474,
+                  "cosine": 0.9308131337165833
+                },
+                {
+                  "l2": 15.69236946105957,
+                  "normalized_l2": 0.18923164904117584,
+                  "cosine": 0.9284409284591675
+                }
+              ]
+            },
+            "alpha_metrics": [
+              {
+                "kl_ab": 1.486940592056987,
+                "kl_ba": 1.5469230246675878,
+                "sym_kl": 1.516931808362283,
+                "js": 0.18092461360293213,
+                "tv": 0.35678324995658545,
+                "argmax_disagree": 0.3828795683100319,
+                "joint_sym_kl": 9.101590850173707,
+                "joint_js_sum": 1.0855476816175968,
+                "joint_tv_bound": 0.8883927114371316,
+                "joint_any_argmax_disagree": 0.8771155261221486,
+                "probe_win_rate": 1.0,
+                "episodes": 20,
+                "steps": 1359,
+                "agent_steps": 8154,
+                "alpha": 0.0
+              },
+              {
+                "kl_ab": 1.1873541364620248,
+                "kl_ba": 1.0159279717686727,
+                "sym_kl": 1.101641054115342,
+                "js": 0.1362762873896432,
+                "tv": 0.29376843962981813,
+                "argmax_disagree": 0.29398315282791815,
+                "joint_sym_kl": 6.609846324692061,
+                "joint_js_sum": 0.8176577243378595,
+                "joint_tv_bound": 0.8752149363759695,
+                "joint_any_argmax_disagree": 0.8288808664259928,
+                "probe_win_rate": 1.0,
+                "episodes": 20,
+                "steps": 1385,
+                "agent_steps": 8310,
+                "alpha": 0.5
+              },
+              {
+                "kl_ab": 1.290019093705765,
+                "kl_ba": 0.9067519558093452,
+                "sym_kl": 1.0983855247575531,
+                "js": 0.13785907526361707,
+                "tv": 0.2967720693938166,
+                "argmax_disagree": 0.30426356589147285,
+                "joint_sym_kl": 6.590313148545347,
+                "joint_js_sum": 0.8271544515817014,
+                "joint_tv_bound": 0.8774656257361063,
+                "joint_any_argmax_disagree": 0.8183139534883721,
+                "probe_win_rate": 1.0,
+                "episodes": 20,
+                "steps": 1376,
+                "agent_steps": 8256,
+                "alpha": 1.0
+              }
+            ]
+          },
+          {
+            "seed": 4,
+            "method_a": "mappo_to_mappo_shared_stage2",
+            "method_b": "mappo_to_mappo_nonshared_stage2",
+            "description": "MAPPO-ct \u2192 MAPPO-ns (same source)",
+            "existing_barrier": 0.0,
+            "existing_wr": [
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              0.98
+            ],
+            "weight_metrics": {
+              "mean_l2": 14.774313926696777,
+              "mean_normalized_l2": 0.17742286870876947,
+              "mean_cosine": 0.9371111194292704,
+              "per_agent": [
+                {
+                  "l2": 15.004949569702148,
+                  "normalized_l2": 0.18015651404857635,
+                  "cosine": 0.9351577758789062
+                },
+                {
+                  "l2": 14.89991283416748,
+                  "normalized_l2": 0.1788451373577118,
+                  "cosine": 0.9360923171043396
+                },
+                {
+                  "l2": 14.62328052520752,
+                  "normalized_l2": 0.17566530406475067,
+                  "cosine": 0.9383661150932312
+                },
+                {
+                  "l2": 14.502671241760254,
+                  "normalized_l2": 0.17441904544830322,
+                  "cosine": 0.9392713308334351
+                },
+                {
+                  "l2": 14.789839744567871,
+                  "normalized_l2": 0.17748408019542694,
+                  "cosine": 0.9370577335357666
+                },
+                {
+                  "l2": 14.82522964477539,
+                  "normalized_l2": 0.1779671311378479,
+                  "cosine": 0.9367214441299438
+                }
+              ]
+            },
+            "alpha_metrics": [
+              {
+                "kl_ab": 0.7483267780860958,
+                "kl_ba": 0.8743366748292404,
+                "sym_kl": 0.811331726457668,
+                "js": 0.11356664971512379,
+                "tv": 0.24080574347669537,
+                "argmax_disagree": 0.24255485893416928,
+                "joint_sym_kl": 4.86799035874601,
+                "joint_js_sum": 0.6813998982907391,
+                "joint_tv_bound": 0.795304664553824,
+                "joint_any_argmax_disagree": 0.7398119122257053,
+                "probe_win_rate": 1.0,
+                "episodes": 20,
+                "steps": 1276,
+                "agent_steps": 7656,
+                "alpha": 0.0
+              },
+              {
+                "kl_ab": 0.6075094061408415,
+                "kl_ba": 0.6256386073828765,
+                "sym_kl": 0.6165740067618596,
+                "js": 0.08928085699974263,
+                "tv": 0.2056956381400661,
+                "argmax_disagree": 0.19485389190587019,
+                "joint_sym_kl": 3.699444040571161,
+                "joint_js_sum": 0.5356851419984568,
+                "joint_tv_bound": 0.7666956682644392,
+                "joint_any_argmax_disagree": 0.6656322730799069,
+                "probe_win_rate": 1.0,
+                "episodes": 20,
+                "steps": 1289,
+                "agent_steps": 7734,
+                "alpha": 0.5
+              },
+              {
+                "kl_ab": 0.6533107511665502,
+                "kl_ba": 0.5428856013262783,
+                "sym_kl": 0.5980981762464163,
+                "js": 0.08805979547027301,
+                "tv": 0.20093360879708883,
+                "argmax_disagree": 0.1931440266052699,
+                "joint_sym_kl": 3.5885890574784893,
+                "joint_js_sum": 0.5283587728216373,
+                "joint_tv_bound": 0.7495366703030669,
+                "joint_any_argmax_disagree": 0.6538756715272448,
+                "probe_win_rate": 1.0,
+                "episodes": 20,
+                "steps": 1303,
+                "agent_steps": 7818,
+                "alpha": 1.0
+              }
+            ]
+          }
+        ],
+        "summary": {
+          "n_seeds": 4,
+          "mean_existing_barrier": 0.0,
+          "mean_weight_normalized_l2": 0.1809802632778883,
+          "mean_weight_cosine": 0.934524471561114,
+          "alpha_summary": [
+            {
+              "alpha": 0.0,
+              "mean_js": 0.139102410304144,
+              "mean_tv": 0.28465672269819453,
+              "mean_sym_kl": 1.0829829798927195,
+              "mean_joint_sym_kl": 6.497897879356317,
+              "mean_action_disagreement": 0.29681645866848044,
+              "mean_probe_win_rate": 1.0
+            },
+            {
+              "alpha": 0.5,
+              "mean_js": 0.10714480656892507,
+              "mean_tv": 0.23699686803810605,
+              "mean_sym_kl": 0.8083911018968941,
+              "mean_joint_sym_kl": 4.85034661138137,
+              "mean_action_disagreement": 0.23638618529759853,
+              "mean_probe_win_rate": 1.0
+            },
+            {
+              "alpha": 1.0,
+              "mean_js": 0.10819050236858593,
+              "mean_tv": 0.23853282687004995,
+              "mean_sym_kl": 0.8101552985430279,
+              "mean_joint_sym_kl": 4.860931791258168,
+              "mean_action_disagreement": 0.23905162194297883,
+              "mean_probe_win_rate": 1.0
+            }
+          ]
+        }
+      },
+      "P3": {
+        "description": "MAPPO \u2192 HAPPO (cross-history)",
+        "method_a": "mappo_shared_full",
+        "method_b": "happo_nonshared_full",
+        "seeds": [
+          {
+            "seed": 1,
+            "method_a": "mappo_shared_full",
+            "method_b": "happo_nonshared_full",
+            "description": "MAPPO \u2192 HAPPO (cross-history)",
+            "existing_barrier": 1.0,
+            "existing_wr": [
+              1.0,
+              1.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "weight_metrics": {
+              "mean_l2": 42.754716555277504,
+              "mean_normalized_l2": 0.5236330131689707,
+              "mean_cosine": 0.44469888508319855,
+              "per_agent": [
+                {
+                  "l2": 31.553022384643555,
+                  "normalized_l2": 0.385029673576355,
+                  "cosine": 0.704153835773468
+                },
+                {
+                  "l2": 45.24729919433594,
+                  "normalized_l2": 0.552315890789032,
+                  "cosine": 0.3904423713684082
+                },
+                {
+                  "l2": 45.139747619628906,
+                  "normalized_l2": 0.55316162109375,
+                  "cosine": 0.38881435990333557
+                },
+                {
+                  "l2": 44.79912567138672,
+                  "normalized_l2": 0.5498911142349243,
+                  "cosine": 0.3961499035358429
+                },
+                {
+                  "l2": 44.745052337646484,
+                  "normalized_l2": 0.5491169095039368,
+                  "cosine": 0.39783817529678345
+                },
+                {
+                  "l2": 45.04405212402344,
+                  "normalized_l2": 0.5522828698158264,
+                  "cosine": 0.39079466462135315
+                }
+              ]
+            },
+            "alpha_metrics": [
+              {
+                "kl_ab": 6.112332957088113,
+                "kl_ba": 6.6439163641499235,
+                "sym_kl": 6.378124660619023,
+                "js": 0.44823726439686323,
+                "tv": 0.715969458415184,
+                "argmax_disagree": 0.7421641791044776,
+                "joint_sym_kl": 38.26874796371405,
+                "joint_js_sum": 2.6894235863811873,
+                "joint_tv_bound": 0.9972578556332264,
+                "joint_any_argmax_disagree": 0.996268656716418,
+                "probe_win_rate": 1.0,
+                "episodes": 20,
+                "steps": 1340,
+                "agent_steps": 8040,
+                "alpha": 0.0
+              },
+              {
+                "kl_ab": 8.084051243155995,
+                "kl_ba": 8.295323784845563,
+                "sym_kl": 8.189687514000754,
+                "js": 0.4216837653240834,
+                "tv": 0.6265873930518067,
+                "argmax_disagree": 0.6305812973883741,
+                "joint_sym_kl": 49.13812508400466,
+                "joint_js_sum": 2.5301025919445115,
+                "joint_tv_bound": 0.9824415698250469,
+                "joint_any_argmax_disagree": 0.9839932603201348,
+                "probe_win_rate": 0.0,
+                "episodes": 20,
+                "steps": 1187,
+                "agent_steps": 7122,
+                "alpha": 0.5
+              },
+              {
+                "kl_ab": 6.0663867714011195,
+                "kl_ba": 4.323467899062549,
+                "sym_kl": 5.194927335231832,
+                "js": 0.3752733500069788,
+                "tv": 0.6337346953430606,
+                "argmax_disagree": 0.6501234567901235,
+                "joint_sym_kl": 31.16956401139103,
+                "joint_js_sum": 2.251640100041877,
+                "joint_tv_bound": 0.9953536437617738,
+                "joint_any_argmax_disagree": 0.9859259259259259,
+                "probe_win_rate": 1.0,
+                "episodes": 20,
+                "steps": 1350,
+                "agent_steps": 8100,
+                "alpha": 1.0
+              }
+            ]
+          },
+          {
+            "seed": 2,
+            "method_a": "mappo_shared_full",
+            "method_b": "happo_nonshared_full",
+            "description": "MAPPO \u2192 HAPPO (cross-history)",
+            "existing_barrier": 1.0,
+            "existing_wr": [
+              1.0,
+              1.0,
+              0.75,
+              0.25,
+              0.0,
+              0.0,
+              0.5,
+              1.0,
+              0.75,
+              1.0,
+              1.0
+            ],
+            "weight_metrics": {
+              "mean_l2": 42.829638163248696,
+              "mean_normalized_l2": 0.5245708078145981,
+              "mean_cosine": 0.44328493376572925,
+              "per_agent": [
+                {
+                  "l2": 32.087303161621094,
+                  "normalized_l2": 0.3928886353969574,
+                  "cosine": 0.6918423175811768
+                },
+                {
+                  "l2": 44.279266357421875,
+                  "normalized_l2": 0.551048755645752,
+                  "cosine": 0.39439401030540466
+                },
+                {
+                  "l2": 45.35591506958008,
+                  "normalized_l2": 0.5545663833618164,
+                  "cosine": 0.38530468940734863
+                },
+                {
+                  "l2": 45.29813766479492,
+                  "normalized_l2": 0.5516830682754517,
+                  "cosine": 0.3915213346481323
+                },
+                {
+                  "l2": 45.14787292480469,
+                  "normalized_l2": 0.5498762726783752,
+                  "cosine": 0.39550381898880005
+                },
+                {
+                  "l2": 44.80933380126953,
+                  "normalized_l2": 0.5473617315292358,
+                  "cosine": 0.4011434316635132
+                }
+              ]
+            },
+            "alpha_metrics": [
+              {
+                "kl_ab": 5.280463849679387,
+                "kl_ba": 6.8116468598616615,
+                "sym_kl": 6.04605535477053,
+                "js": 0.4469636529083669,
+                "tv": 0.7096358313386394,
+                "argmax_disagree": 0.7325319308790383,
+                "joint_sym_kl": 36.2763321286233,
+                "joint_js_sum": 2.6817819174502047,
+                "joint_tv_bound": 1.0,
+                "joint_any_argmax_disagree": 1.0,
+                "probe_win_rate": 1.0,
+                "episodes": 20,
+                "steps": 1331,
+                "agent_steps": 7986,
+                "alpha": 0.0
+              },
+              {
+                "kl_ab": 3.0443368154877937,
+                "kl_ba": 2.9417677561540647,
+                "sym_kl": 2.993052285820921,
+                "js": 0.2337975150050129,
+                "tv": 0.38318254520880085,
+                "argmax_disagree": 0.39586357039187225,
+                "joint_sym_kl": 17.958313714925634,
+                "joint_js_sum": 1.4027850900300816,
+                "joint_tv_bound": 0.9002200244196993,
+                "joint_any_argmax_disagree": 0.865021770682148,
+                "probe_win_rate": 0.0,
+                "episodes": 20,
+                "steps": 1378,
+                "agent_steps": 8268,
+                "alpha": 0.5
+              },
+              {
+                "kl_ab": 3.0019147825468524,
+                "kl_ba": 2.707890190845453,
+                "sym_kl": 2.854902486696159,
+                "js": 0.2308923004874714,
+                "tv": 0.39999113304971057,
+                "argmax_disagree": 0.41025641025641024,
+                "joint_sym_kl": 17.129414920176917,
+                "joint_js_sum": 1.385353802924823,
+                "joint_tv_bound": 0.9623741209038598,
+                "joint_any_argmax_disagree": 0.9404466501240695,
+                "probe_win_rate": 0.95,
+                "episodes": 20,
+                "steps": 1612,
+                "agent_steps": 9672,
+                "alpha": 1.0
+              }
+            ]
+          },
+          {
+            "seed": 3,
+            "method_a": "mappo_shared_full",
+            "method_b": "happo_nonshared_full",
+            "description": "MAPPO \u2192 HAPPO (cross-history)",
+            "existing_barrier": 0.92,
+            "existing_wr": [
+              1.0,
+              1.0,
+              1.0,
+              0.75,
+              0.0,
+              0.0,
+              0.0,
+              0.75,
+              1.0,
+              1.0,
+              0.92
+            ],
+            "weight_metrics": {
+              "mean_l2": 42.690826733907066,
+              "mean_normalized_l2": 0.5254306693871816,
+              "mean_cosine": 0.4416571110486984,
+              "per_agent": [
+                {
+                  "l2": 31.99245262145996,
+                  "normalized_l2": 0.39186912775039673,
+                  "cosine": 0.6936120390892029
+                },
+                {
+                  "l2": 44.33561706542969,
+                  "normalized_l2": 0.5496937036514282,
+                  "cosine": 0.3972238600254059
+                },
+                {
+                  "l2": 45.400352478027344,
+                  "normalized_l2": 0.5559112429618835,
+                  "cosine": 0.38250550627708435
+                },
+                {
+                  "l2": 45.33574676513672,
+                  "normalized_l2": 0.5559678673744202,
+                  "cosine": 0.3824708163738251
+                },
+                {
+                  "l2": 44.545616149902344,
+                  "normalized_l2": 0.5491533279418945,
+                  "cosine": 0.39791250228881836
+                },
+                {
+                  "l2": 44.53517532348633,
+                  "normalized_l2": 0.5499887466430664,
+                  "cosine": 0.396217942237854
+                }
+              ]
+            },
+            "alpha_metrics": [
+              {
+                "kl_ab": 2.796087035888815,
+                "kl_ba": 3.0818446619658126,
+                "sym_kl": 2.938965848927302,
+                "js": 0.278904828153956,
+                "tv": 0.49347456711383103,
+                "argmax_disagree": 0.519927536231884,
+                "joint_sym_kl": 17.633795093563844,
+                "joint_js_sum": 1.6734289689237403,
+                "joint_tv_bound": 0.9817149000851948,
+                "joint_any_argmax_disagree": 0.972463768115942,
+                "probe_win_rate": 1.0,
+                "episodes": 20,
+                "steps": 1380,
+                "agent_steps": 8280,
+                "alpha": 0.0
+              },
+              {
+                "kl_ab": 4.089946467977058,
+                "kl_ba": 3.6637458789809627,
+                "sym_kl": 3.876846173479034,
+                "js": 0.2695298997515623,
+                "tv": 0.4330823322569593,
+                "argmax_disagree": 0.43609671848013815,
+                "joint_sym_kl": 23.2610770408741,
+                "joint_js_sum": 1.6171793985093752,
+                "joint_tv_bound": 0.938537172465764,
+                "joint_any_argmax_disagree": 0.9347150259067357,
+                "probe_win_rate": 0.0,
+                "episodes": 20,
+                "steps": 965,
+                "agent_steps": 5790,
+                "alpha": 0.5
+              },
+              {
+                "kl_ab": 2.4753057047997036,
+                "kl_ba": 2.0234828981454718,
+                "sym_kl": 2.249394301472601,
+                "js": 0.21370197440013164,
+                "tv": 0.4056819713051069,
+                "argmax_disagree": 0.4033886085075703,
+                "joint_sym_kl": 13.496365808835522,
+                "joint_js_sum": 1.282211846400794,
+                "joint_tv_bound": 0.9676509953814847,
+                "joint_any_argmax_disagree": 0.916366258111031,
+                "probe_win_rate": 1.0,
+                "episodes": 20,
+                "steps": 1387,
+                "agent_steps": 8322,
+                "alpha": 1.0
+              }
+            ]
+          },
+          {
+            "seed": 4,
+            "method_a": "mappo_shared_full",
+            "method_b": "happo_nonshared_full",
+            "description": "MAPPO \u2192 HAPPO (cross-history)",
+            "existing_barrier": 1.0,
+            "existing_wr": [
+              1.0,
+              0.92,
+              0.75,
+              0.75,
+              0.0,
+              0.0,
+              0.0,
+              0.75,
+              0.99,
+              1.0,
+              1.0
+            ],
+            "weight_metrics": {
+              "mean_l2": 42.789707819620766,
+              "mean_normalized_l2": 0.5220660418272018,
+              "mean_cosine": 0.44844787816206616,
+              "per_agent": [
+                {
+                  "l2": 32.096832275390625,
+                  "normalized_l2": 0.3888706862926483,
+                  "cosine": 0.6978728175163269
+                },
+                {
+                  "l2": 44.827003479003906,
+                  "normalized_l2": 0.5476275682449341,
+                  "cosine": 0.4008883535861969
+                },
+                {
+                  "l2": 44.31434631347656,
+                  "normalized_l2": 0.5475674867630005,
+                  "cosine": 0.4019353985786438
+                },
+                {
+                  "l2": 44.995635986328125,
+                  "normalized_l2": 0.548224687576294,
+                  "cosine": 0.39942169189453125
+                },
+                {
+                  "l2": 44.930885314941406,
+                  "normalized_l2": 0.5476845502853394,
+                  "cosine": 0.4006316065788269
+                },
+                {
+                  "l2": 45.573543548583984,
+                  "normalized_l2": 0.5524212718009949,
+                  "cosine": 0.3899374008178711
+                }
+              ]
+            },
+            "alpha_metrics": [
+              {
+                "kl_ab": 4.771793283711333,
+                "kl_ba": 5.650324500155746,
+                "sym_kl": 5.211058891933538,
+                "js": 0.40853463099248905,
+                "tv": 0.6522261242932086,
+                "argmax_disagree": 0.6662820512820513,
+                "joint_sym_kl": 31.26635335160125,
+                "joint_js_sum": 2.451207785954934,
+                "joint_tv_bound": 0.9960791683467081,
+                "joint_any_argmax_disagree": 0.9938461538461538,
+                "probe_win_rate": 1.0,
+                "episodes": 20,
+                "steps": 1300,
+                "agent_steps": 7800,
+                "alpha": 0.0
+              },
+              {
+                "kl_ab": 4.791904171381727,
+                "kl_ba": 4.016123405679249,
+                "sym_kl": 4.404013788530487,
+                "js": 0.29571721632358744,
+                "tv": 0.4664144375956375,
+                "argmax_disagree": 0.4683088447133391,
+                "joint_sym_kl": 26.42408273118297,
+                "joint_js_sum": 1.7743032979415148,
+                "joint_tv_bound": 0.9564412621083646,
+                "joint_any_argmax_disagree": 0.9611063094209161,
+                "probe_win_rate": 0.0,
+                "episodes": 20,
+                "steps": 1157,
+                "agent_steps": 6942,
+                "alpha": 0.5
+              },
+              {
+                "kl_ab": 3.5474292636564853,
+                "kl_ba": 2.719824279569435,
+                "sym_kl": 3.13362677161297,
+                "js": 0.2451362396229195,
+                "tv": 0.43343089119839956,
+                "argmax_disagree": 0.4148227456578634,
+                "joint_sym_kl": 18.8017606296778,
+                "joint_js_sum": 1.4708174377375227,
+                "joint_tv_bound": 0.9769230586298557,
+                "joint_any_argmax_disagree": 0.9336188436830836,
+                "probe_win_rate": 1.0,
+                "episodes": 20,
+                "steps": 1401,
+                "agent_steps": 8406,
+                "alpha": 1.0
+              }
+            ]
+          }
+        ],
+        "summary": {
+          "n_seeds": 4,
+          "mean_existing_barrier": 0.98,
+          "mean_weight_normalized_l2": 0.5239251330494881,
+          "mean_weight_cosine": 0.4445222020149231,
+          "alpha_summary": [
+            {
+              "alpha": 0.0,
+              "mean_js": 0.39566009411291886,
+              "mean_tv": 0.6428264952902157,
+              "mean_sym_kl": 5.143551189062598,
+              "mean_joint_sym_kl": 30.86130713437561,
+              "mean_action_disagreement": 0.6652264243743629,
+              "mean_probe_win_rate": 1.0
+            },
+            {
+              "alpha": 0.5,
+              "mean_js": 0.30518209910106153,
+              "mean_tv": 0.47731667702830105,
+              "mean_sym_kl": 4.865899940457799,
+              "mean_joint_sym_kl": 29.195399642746843,
+              "mean_action_disagreement": 0.48271260774343094,
+              "mean_probe_win_rate": 0.0
+            },
+            {
+              "alpha": 1.0,
+              "mean_js": 0.2662509661293753,
+              "mean_tv": 0.46820967272406944,
+              "mean_sym_kl": 3.3582127237533905,
+              "mean_joint_sym_kl": 20.149276342520317,
+              "mean_action_disagreement": 0.4696478053029919,
+              "mean_probe_win_rate": 0.9875
+            }
+          ]
+        }
+      },
+      "P5": {
+        "description": "MAPPO-ct \u2192 HAPPO (shared-source vs independent)",
+        "method_a": "mappo_to_mappo_shared_stage2",
+        "method_b": "happo_nonshared_full",
+        "seeds": [
+          {
+            "seed": 1,
+            "method_a": "mappo_to_mappo_shared_stage2",
+            "method_b": "happo_nonshared_full",
+            "description": "MAPPO-ct \u2192 HAPPO (shared-source vs independent)",
+            "existing_barrier": 1.0,
+            "existing_wr": [
+              1.0,
+              1.0,
+              1.0,
+              0.75,
+              0.0,
+              0.0,
+              0.0,
+              0.75,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "weight_metrics": {
+              "mean_l2": 43.3901424407959,
+              "mean_normalized_l2": 0.52679776151975,
+              "mean_cosine": 0.4390383909145991,
+              "per_agent": [
+                {
+                  "l2": 32.33543395996094,
+                  "normalized_l2": 0.39116233587265015,
+                  "cosine": 0.6953147053718567
+                },
+                {
+                  "l2": 45.7821044921875,
+                  "normalized_l2": 0.5540059804916382,
+                  "cosine": 0.3872694969177246
+                },
+                {
+                  "l2": 45.71364974975586,
+                  "normalized_l2": 0.5553259253501892,
+                  "cosine": 0.3846742808818817
+                },
+                {
+                  "l2": 45.48563766479492,
+                  "normalized_l2": 0.5534576773643494,
+                  "cosine": 0.38897693157196045
+                },
+                {
+                  "l2": 45.34608459472656,
+                  "normalized_l2": 0.5516495704650879,
+                  "cosine": 0.3929586112499237
+                },
+                {
+                  "l2": 45.67794418334961,
+                  "normalized_l2": 0.555185079574585,
+                  "cosine": 0.38503631949424744
+                }
+              ]
+            },
+            "alpha_metrics": [
+              {
+                "kl_ab": 6.371632796566374,
+                "kl_ba": 6.825620330168158,
+                "sym_kl": 6.598626563367286,
+                "js": 0.46562382601769536,
+                "tv": 0.7367132559204396,
+                "argmax_disagree": 0.7583025830258303,
+                "joint_sym_kl": 39.591759380203726,
+                "joint_js_sum": 2.7937429561061724,
+                "joint_tv_bound": 0.9977744207849838,
+                "joint_any_argmax_disagree": 0.9955719557195571,
+                "probe_win_rate": 1.0,
+                "episodes": 20,
+                "steps": 1355,
+                "agent_steps": 8130,
+                "alpha": 0.0
+              },
+              {
+                "kl_ab": 7.25648273870531,
+                "kl_ba": 7.182710709218416,
+                "sym_kl": 7.219596723961859,
+                "js": 0.3689726300395989,
+                "tv": 0.5500184815210104,
+                "argmax_disagree": 0.5568814638027049,
+                "joint_sym_kl": 43.317580343771304,
+                "joint_js_sum": 2.2138357802375928,
+                "joint_tv_bound": 0.9641382467083202,
+                "joint_any_argmax_disagree": 0.9681782020684169,
+                "probe_win_rate": 0.0,
+                "episodes": 20,
+                "steps": 1257,
+                "agent_steps": 7542,
+                "alpha": 0.5
+              },
+              {
+                "kl_ab": 5.4297704249921726,
+                "kl_ba": 4.4938385877372555,
+                "sym_kl": 4.961804506364694,
+                "js": 0.3606639329380404,
+                "tv": 0.6067006640634446,
+                "argmax_disagree": 0.624320987654321,
+                "joint_sym_kl": 29.77082703818829,
+                "joint_js_sum": 2.1639835976282455,
+                "joint_tv_bound": 0.9938980718131339,
+                "joint_any_argmax_disagree": 0.9859259259259259,
+                "probe_win_rate": 1.0,
+                "episodes": 20,
+                "steps": 1350,
+                "agent_steps": 8100,
+                "alpha": 1.0
+              }
+            ]
+          },
+          {
+            "seed": 2,
+            "method_a": "mappo_to_mappo_shared_stage2",
+            "method_b": "happo_nonshared_full",
+            "description": "MAPPO-ct \u2192 HAPPO (shared-source vs independent)",
+            "existing_barrier": 0.99,
+            "existing_wr": [
+              1.0,
+              1.0,
+              0.75,
+              0.0,
+              0.0,
+              0.0,
+              0.25,
+              0.25,
+              1.0,
+              1.0,
+              0.99
+            ],
+            "weight_metrics": {
+              "mean_l2": 42.9617493947347,
+              "mean_normalized_l2": 0.5249109615882238,
+              "mean_cosine": 0.4428243537743886,
+              "per_agent": [
+                {
+                  "l2": 32.282493591308594,
+                  "normalized_l2": 0.3943158686161041,
+                  "cosine": 0.6897520422935486
+                },
+                {
+                  "l2": 44.4926872253418,
+                  "normalized_l2": 0.5523340702056885,
+                  "cosine": 0.39179477095603943
+                },
+                {
+                  "l2": 45.40043258666992,
+                  "normalized_l2": 0.5537605881690979,
+                  "cosine": 0.38721102476119995
+                },
+                {
+                  "l2": 45.343177795410156,
+                  "normalized_l2": 0.5508938431739807,
+                  "cosine": 0.39335548877716064
+                },
+                {
+                  "l2": 45.234710693359375,
+                  "normalized_l2": 0.5495991110801697,
+                  "cosine": 0.3962076008319855
+                },
+                {
+                  "l2": 45.01699447631836,
+                  "normalized_l2": 0.5485622882843018,
+                  "cosine": 0.3986251950263977
+                }
+              ]
+            },
+            "alpha_metrics": [
+              {
+                "kl_ab": 5.412869484230815,
+                "kl_ba": 6.707814687034204,
+                "sym_kl": 6.06034208563252,
+                "js": 0.44312485867077356,
+                "tv": 0.7043409901536758,
+                "argmax_disagree": 0.7251196775006299,
+                "joint_sym_kl": 36.36205251379507,
+                "joint_js_sum": 2.6587491520246376,
+                "joint_tv_bound": 0.9965398187390221,
+                "joint_any_argmax_disagree": 0.9947089947089947,
+                "probe_win_rate": 1.0,
+                "episodes": 20,
+                "steps": 1323,
+                "agent_steps": 7938,
+                "alpha": 0.0
+              },
+              {
+                "kl_ab": 1.9978375793672614,
+                "kl_ba": 2.0779599166450144,
+                "sym_kl": 2.0378987480061466,
+                "js": 0.1620016416812665,
+                "tv": 0.2717399217400988,
+                "argmax_disagree": 0.2791211648465939,
+                "joint_sym_kl": 12.227392488036905,
+                "joint_js_sum": 0.9720098500876013,
+                "joint_tv_bound": 0.7911816940689401,
+                "joint_any_argmax_disagree": 0.8182527301092044,
+                "probe_win_rate": 0.0,
+                "episodes": 20,
+                "steps": 2564,
+                "agent_steps": 15384,
+                "alpha": 0.5
+              },
+              {
+                "kl_ab": 2.881816978265519,
+                "kl_ba": 2.6613821466629703,
+                "sym_kl": 2.7715995624642384,
+                "js": 0.2203952225871411,
+                "tv": 0.3836112605959794,
+                "argmax_disagree": 0.3845119933829611,
+                "joint_sym_kl": 16.629597374785494,
+                "joint_js_sum": 1.3223713355228484,
+                "joint_tv_bound": 0.9432847030782037,
+                "joint_any_argmax_disagree": 0.8970223325062034,
+                "probe_win_rate": 0.95,
+                "episodes": 20,
+                "steps": 1612,
+                "agent_steps": 9672,
+                "alpha": 1.0
+              }
+            ]
+          },
+          {
+            "seed": 3,
+            "method_a": "mappo_to_mappo_shared_stage2",
+            "method_b": "happo_nonshared_full",
+            "description": "MAPPO-ct \u2192 HAPPO (shared-source vs independent)",
+            "existing_barrier": 1.0,
+            "existing_wr": [
+              1.0,
+              1.0,
+              0.25,
+              0.5,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "weight_metrics": {
+              "mean_l2": 42.729583740234375,
+              "mean_normalized_l2": 0.5257822026809057,
+              "mean_cosine": 0.4409517745176951,
+              "per_agent": [
+                {
+                  "l2": 32.040836334228516,
+                  "normalized_l2": 0.3923691213130951,
+                  "cosine": 0.6928443312644958
+                },
+                {
+                  "l2": 44.32931137084961,
+                  "normalized_l2": 0.5494841933250427,
+                  "cosine": 0.39770668745040894
+                },
+                {
+                  "l2": 45.48646545410156,
+                  "normalized_l2": 0.5568341612815857,
+                  "cosine": 0.3804643452167511
+                },
+                {
+                  "l2": 45.293846130371094,
+                  "normalized_l2": 0.5553227066993713,
+                  "cosine": 0.3839205205440521
+                },
+                {
+                  "l2": 44.696529388427734,
+                  "normalized_l2": 0.5508828163146973,
+                  "cosine": 0.39412254095077515
+                },
+                {
+                  "l2": 44.530513763427734,
+                  "normalized_l2": 0.5498002171516418,
+                  "cosine": 0.3966522216796875
+                }
+              ]
+            },
+            "alpha_metrics": [
+              {
+                "kl_ab": 3.786106495263445,
+                "kl_ba": 3.8552188654834856,
+                "sym_kl": 3.820662680373464,
+                "js": 0.3313945224686241,
+                "tv": 0.5611914330115337,
+                "argmax_disagree": 0.5960264900662252,
+                "joint_sym_kl": 22.923976082240863,
+                "joint_js_sum": 1.988367134811741,
+                "joint_tv_bound": 0.9784951450223219,
+                "joint_any_argmax_disagree": 0.9735099337748344,
+                "probe_win_rate": 1.0,
+                "episodes": 20,
+                "steps": 1359,
+                "agent_steps": 8154,
+                "alpha": 0.0
+              },
+              {
+                "kl_ab": 4.871208957844929,
+                "kl_ba": 3.7411221166772624,
+                "sym_kl": 4.306165537261081,
+                "js": 0.29833113194080346,
+                "tv": 0.47360789981616275,
+                "argmax_disagree": 0.4730782855118668,
+                "joint_sym_kl": 25.836993223566548,
+                "joint_js_sum": 1.7899867916448198,
+                "joint_tv_bound": 0.9343197187715181,
+                "joint_any_argmax_disagree": 0.9309245483528161,
+                "probe_win_rate": 0.0,
+                "episodes": 20,
+                "steps": 941,
+                "agent_steps": 5646,
+                "alpha": 0.5
+              },
+              {
+                "kl_ab": 3.4099100566118885,
+                "kl_ba": 2.2665806730425615,
+                "sym_kl": 2.838245364827232,
+                "js": 0.256029787600593,
+                "tv": 0.47255357514108065,
+                "argmax_disagree": 0.4900264359528959,
+                "joint_sym_kl": 17.02947218896339,
+                "joint_js_sum": 1.5361787256035595,
+                "joint_tv_bound": 0.9902035315251289,
+                "joint_any_argmax_disagree": 0.9776496034607065,
+                "probe_win_rate": 1.0,
+                "episodes": 20,
+                "steps": 1387,
+                "agent_steps": 8322,
+                "alpha": 1.0
+              }
+            ]
+          },
+          {
+            "seed": 4,
+            "method_a": "mappo_to_mappo_shared_stage2",
+            "method_b": "happo_nonshared_full",
+            "description": "MAPPO-ct \u2192 HAPPO (shared-source vs independent)",
+            "existing_barrier": 1.0,
+            "existing_wr": [
+              1.0,
+              0.98,
+              1.0,
+              0.5,
+              0.0,
+              0.0,
+              0.75,
+              0.75,
+              0.75,
+              1.0,
+              1.0
+            ],
+            "weight_metrics": {
+              "mean_l2": 42.80865287780762,
+              "mean_normalized_l2": 0.5218850274880728,
+              "mean_cosine": 0.448979655901591,
+              "per_agent": [
+                {
+                  "l2": 32.18743896484375,
+                  "normalized_l2": 0.3896610140800476,
+                  "cosine": 0.6966783404350281
+                },
+                {
+                  "l2": 44.916011810302734,
+                  "normalized_l2": 0.5482786893844604,
+                  "cosine": 0.3995088040828705
+                },
+                {
+                  "l2": 44.329586029052734,
+                  "normalized_l2": 0.5473153591156006,
+                  "cosine": 0.40256258845329285
+                },
+                {
+                  "l2": 45.149559020996094,
+                  "normalized_l2": 0.5496639609336853,
+                  "cosine": 0.39630189538002014
+                },
+                {
+                  "l2": 44.97584533691406,
+                  "normalized_l2": 0.5477977395057678,
+                  "cosine": 0.4004267156124115
+                },
+                {
+                  "l2": 45.29347610473633,
+                  "normalized_l2": 0.5485934019088745,
+                  "cosine": 0.39839959144592285
+                }
+              ]
+            },
+            "alpha_metrics": [
+              {
+                "kl_ab": 4.789200482851212,
+                "kl_ba": 5.448334634204406,
+                "sym_kl": 5.118767558527825,
+                "js": 0.40086710949275983,
+                "tv": 0.6450163332572588,
+                "argmax_disagree": 0.6571316614420063,
+                "joint_sym_kl": 30.7126053511668,
+                "joint_js_sum": 2.4052026569565683,
+                "joint_tv_bound": 1.0,
+                "joint_any_argmax_disagree": 1.0,
+                "probe_win_rate": 1.0,
+                "episodes": 20,
+                "steps": 1276,
+                "agent_steps": 7656,
+                "alpha": 0.0
+              },
+              {
+                "kl_ab": 2.805285894175991,
+                "kl_ba": 2.9973486204939817,
+                "sym_kl": 2.9013172573350015,
+                "js": 0.1947822816679275,
+                "tv": 0.31559983900664834,
+                "argmax_disagree": 0.3137901861252115,
+                "joint_sym_kl": 17.407903544010022,
+                "joint_js_sum": 1.1686936900075613,
+                "joint_tv_bound": 0.8003020856610669,
+                "joint_any_argmax_disagree": 0.7949238578680203,
+                "probe_win_rate": 0.0,
+                "episodes": 20,
+                "steps": 1970,
+                "agent_steps": 11820,
+                "alpha": 0.5
+              },
+              {
+                "kl_ab": 3.467218496563143,
+                "kl_ba": 2.939454738389136,
+                "sym_kl": 3.203336617476123,
+                "js": 0.24379327255366495,
+                "tv": 0.43074802770617254,
+                "argmax_disagree": 0.4189864382583869,
+                "joint_sym_kl": 19.22001970485683,
+                "joint_js_sum": 1.462759635321988,
+                "joint_tv_bound": 0.9837453130912612,
+                "joint_any_argmax_disagree": 0.953604568165596,
+                "probe_win_rate": 1.0,
+                "episodes": 20,
+                "steps": 1401,
+                "agent_steps": 8406,
+                "alpha": 1.0
+              }
+            ]
+          }
+        ],
+        "summary": {
+          "n_seeds": 4,
+          "mean_existing_barrier": 0.9975,
+          "mean_weight_normalized_l2": 0.5248439883192381,
+          "mean_weight_cosine": 0.4429485437770685,
+          "alpha_summary": [
+            {
+              "alpha": 0.0,
+              "mean_js": 0.4102525791624632,
+              "mean_tv": 0.661815503085727,
+              "mean_sym_kl": 5.399599721975274,
+              "mean_joint_sym_kl": 32.39759833185161,
+              "mean_action_disagreement": 0.6841451030086729,
+              "mean_probe_win_rate": 1.0
+            },
+            {
+              "alpha": 0.5,
+              "mean_js": 0.2560219213323991,
+              "mean_tv": 0.4027415355209801,
+              "mean_sym_kl": 4.116244566641022,
+              "mean_joint_sym_kl": 24.697467399846197,
+              "mean_action_disagreement": 0.4057177750715943,
+              "mean_probe_win_rate": 0.0
+            },
+            {
+              "alpha": 1.0,
+              "mean_js": 0.27022055391985983,
+              "mean_tv": 0.4734033818766693,
+              "mean_sym_kl": 3.443746512783072,
+              "mean_joint_sym_kl": 20.662479076698503,
+              "mean_action_disagreement": 0.47946146381214116,
+              "mean_probe_win_rate": 0.9875
+            }
+          ]
+        }
+      },
+      "P6": {
+        "description": "MAPPO-ns \u2192 M2H (same source, both decoupled)",
+        "method_a": "mappo_to_mappo_nonshared_stage2",
+        "method_b": "mappo_to_happo_nonshared_stage2",
+        "seeds": [
+          {
+            "seed": 1,
+            "method_a": "mappo_to_mappo_nonshared_stage2",
+            "method_b": "mappo_to_happo_nonshared_stage2",
+            "description": "MAPPO-ns \u2192 M2H (same source, both decoupled)",
+            "existing_barrier": 0.0,
+            "existing_wr": [
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "weight_metrics": {
+              "mean_l2": 14.782432238260904,
+              "mean_normalized_l2": 0.17603904753923416,
+              "mean_cosine": 0.9380109012126923,
+              "per_agent": [
+                {
+                  "l2": 14.839954376220703,
+                  "normalized_l2": 0.1766127347946167,
+                  "cosine": 0.9376169443130493
+                },
+                {
+                  "l2": 14.748087882995605,
+                  "normalized_l2": 0.17563855648040771,
+                  "cosine": 0.93830406665802
+                },
+                {
+                  "l2": 14.863286972045898,
+                  "normalized_l2": 0.17667049169540405,
+                  "cosine": 0.9375767111778259
+                },
+                {
+                  "l2": 15.207191467285156,
+                  "normalized_l2": 0.1806173473596573,
+                  "cosine": 0.9347586035728455
+                },
+                {
+                  "l2": 14.42755126953125,
+                  "normalized_l2": 0.1725991815328598,
+                  "cosine": 0.9404196739196777
+                },
+                {
+                  "l2": 14.608521461486816,
+                  "normalized_l2": 0.1740959733724594,
+                  "cosine": 0.9393894076347351
+                }
+              ]
+            },
+            "alpha_metrics": [
+              {
+                "kl_ab": 1.3172268942483891,
+                "kl_ba": 1.5387852624178473,
+                "sym_kl": 1.4280060783331239,
+                "js": 0.17166552403684396,
+                "tv": 0.3348555062207085,
+                "argmax_disagree": 0.3517001737403822,
+                "joint_sym_kl": 8.568036469998729,
+                "joint_js_sum": 1.0299931442210741,
+                "joint_tv_bound": 0.9062682338911816,
+                "joint_any_argmax_disagree": 0.8823529411764706,
+                "probe_win_rate": 1.0,
+                "episodes": 20,
+                "steps": 1343,
+                "agent_steps": 8058,
+                "alpha": 0.0
+              },
+              {
+                "kl_ab": 1.464057416439392,
+                "kl_ba": 1.3405910166588595,
+                "sym_kl": 1.4023242165491308,
+                "js": 0.16383451802857013,
+                "tv": 0.32646879379443183,
+                "argmax_disagree": 0.3381096028154852,
+                "joint_sym_kl": 8.413945299294756,
+                "joint_js_sum": 0.9830071081714242,
+                "joint_tv_bound": 0.9111200526295504,
+                "joint_any_argmax_disagree": 0.8838612368024132,
+                "probe_win_rate": 1.0,
+                "episodes": 20,
+                "steps": 1326,
+                "agent_steps": 7956,
+                "alpha": 0.5
+              },
+              {
+                "kl_ab": 1.6028134971012067,
+                "kl_ba": 1.1194353705771416,
+                "sym_kl": 1.3611244338391666,
+                "js": 0.16079692900481407,
+                "tv": 0.3193622635482728,
+                "argmax_disagree": 0.3388971315529179,
+                "joint_sym_kl": 8.166746603035037,
+                "joint_js_sum": 0.9647815740288891,
+                "joint_tv_bound": 0.882557520590466,
+                "joint_any_argmax_disagree": 0.8568249258160238,
+                "probe_win_rate": 1.0,
+                "episodes": 20,
+                "steps": 1348,
+                "agent_steps": 8088,
+                "alpha": 1.0
+              }
+            ]
+          },
+          {
+            "seed": 2,
+            "method_a": "mappo_to_mappo_nonshared_stage2",
+            "method_b": "mappo_to_happo_nonshared_stage2",
+            "description": "MAPPO-ns \u2192 M2H (same source, both decoupled)",
+            "existing_barrier": 0.0,
+            "existing_wr": [
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "weight_metrics": {
+              "mean_l2": 14.450692812601725,
+              "mean_normalized_l2": 0.1748883624871572,
+              "mean_cosine": 0.9388153652350107,
+              "per_agent": [
+                {
+                  "l2": 14.75871753692627,
+                  "normalized_l2": 0.17874878644943237,
+                  "cosine": 0.936099112033844
+                },
+                {
+                  "l2": 14.56657600402832,
+                  "normalized_l2": 0.17583099007606506,
+                  "cosine": 0.9381736516952515
+                },
+                {
+                  "l2": 14.154824256896973,
+                  "normalized_l2": 0.17148138582706451,
+                  "cosine": 0.941195547580719
+                },
+                {
+                  "l2": 14.695433616638184,
+                  "normalized_l2": 0.1778603047132492,
+                  "cosine": 0.9367324113845825
+                },
+                {
+                  "l2": 14.170647621154785,
+                  "normalized_l2": 0.17173169553279877,
+                  "cosine": 0.9410167932510376
+                },
+                {
+                  "l2": 14.35795783996582,
+                  "normalized_l2": 0.1736770123243332,
+                  "cosine": 0.9396746754646301
+                }
+              ]
+            },
+            "alpha_metrics": [
+              {
+                "kl_ab": 1.0015046746806155,
+                "kl_ba": 1.2313300037283677,
+                "sym_kl": 1.1164173392044872,
+                "js": 0.13952419785514775,
+                "tv": 0.2790747768352428,
+                "argmax_disagree": 0.29675405742821476,
+                "joint_sym_kl": 6.698504035226932,
+                "joint_js_sum": 0.837145187130881,
+                "joint_tv_bound": 0.8271957157429054,
+                "joint_any_argmax_disagree": 0.7940074906367042,
+                "probe_win_rate": 1.0,
+                "episodes": 20,
+                "steps": 1335,
+                "agent_steps": 8010,
+                "alpha": 0.0
+              },
+              {
+                "kl_ab": 0.997095596477727,
+                "kl_ba": 0.9431099897261378,
+                "sym_kl": 0.9701027931019309,
+                "js": 0.12246981240999738,
+                "tv": 0.25281794378652755,
+                "argmax_disagree": 0.260448136958711,
+                "joint_sym_kl": 5.8206167586115996,
+                "joint_js_sum": 0.734818874459984,
+                "joint_tv_bound": 0.8098845432578801,
+                "joint_any_argmax_disagree": 0.7620845921450151,
+                "probe_win_rate": 1.0,
+                "episodes": 20,
+                "steps": 1324,
+                "agent_steps": 7944,
+                "alpha": 0.5
+              },
+              {
+                "kl_ab": 1.2002329721469738,
+                "kl_ba": 0.9764950725412795,
+                "sym_kl": 1.0883640223441255,
+                "js": 0.1337771198804677,
+                "tv": 0.2694416740302595,
+                "argmax_disagree": 0.28574950690335305,
+                "joint_sym_kl": 6.53018413406474,
+                "joint_js_sum": 0.8026627192828079,
+                "joint_tv_bound": 0.8309441504675397,
+                "joint_any_argmax_disagree": 0.7958579881656804,
+                "probe_win_rate": 1.0,
+                "episodes": 20,
+                "steps": 1352,
+                "agent_steps": 8112,
+                "alpha": 1.0
+              }
+            ]
+          },
+          {
+            "seed": 3,
+            "method_a": "mappo_to_mappo_nonshared_stage2",
+            "method_b": "mappo_to_happo_nonshared_stage2",
+            "description": "MAPPO-ns \u2192 M2H (same source, both decoupled)",
+            "existing_barrier": 0.07999999999999996,
+            "existing_wr": [
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              0.92,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "weight_metrics": {
+              "mean_l2": 15.178679784138998,
+              "mean_normalized_l2": 0.18393298983573914,
+              "mean_cosine": 0.9323214292526245,
+              "per_agent": [
+                {
+                  "l2": 15.079635620117188,
+                  "normalized_l2": 0.1831316202878952,
+                  "cosine": 0.932930052280426
+                },
+                {
+                  "l2": 15.08780288696289,
+                  "normalized_l2": 0.18286719918251038,
+                  "cosine": 0.9331235885620117
+                },
+                {
+                  "l2": 15.793280601501465,
+                  "normalized_l2": 0.1907854527235031,
+                  "cosine": 0.9272183775901794
+                },
+                {
+                  "l2": 15.24178695678711,
+                  "normalized_l2": 0.18438312411308289,
+                  "cosine": 0.9320164322853088
+                },
+                {
+                  "l2": 15.044629096984863,
+                  "normalized_l2": 0.18251922726631165,
+                  "cosine": 0.9333740472793579
+                },
+                {
+                  "l2": 14.824943542480469,
+                  "normalized_l2": 0.1799113154411316,
+                  "cosine": 0.9352660775184631
+                }
+              ]
+            },
+            "alpha_metrics": [
+              {
+                "kl_ab": 1.5158195784982285,
+                "kl_ba": 1.9359260526188866,
+                "sym_kl": 1.7258728155585543,
+                "js": 0.19022233287738094,
+                "tv": 0.3665878135017204,
+                "argmax_disagree": 0.38335755813953487,
+                "joint_sym_kl": 10.355236893351336,
+                "joint_js_sum": 1.1413339972642815,
+                "joint_tv_bound": 0.9108148551694236,
+                "joint_any_argmax_disagree": 0.8880813953488372,
+                "probe_win_rate": 1.0,
+                "episodes": 20,
+                "steps": 1376,
+                "agent_steps": 8256,
+                "alpha": 0.0
+              },
+              {
+                "kl_ab": 1.6975137340785784,
+                "kl_ba": 1.8152747808656065,
+                "sym_kl": 1.7563942574720879,
+                "js": 0.19032852403027714,
+                "tv": 0.3642678326209246,
+                "argmax_disagree": 0.3754775549188157,
+                "joint_sym_kl": 10.538365544832521,
+                "joint_js_sum": 1.1419711441816558,
+                "joint_tv_bound": 0.9106603240470792,
+                "joint_any_argmax_disagree": 0.8968481375358166,
+                "probe_win_rate": 1.0,
+                "episodes": 20,
+                "steps": 1396,
+                "agent_steps": 8376,
+                "alpha": 0.5
+              },
+              {
+                "kl_ab": 2.3493121085145567,
+                "kl_ba": 1.9129778901007672,
+                "sym_kl": 2.131144999307669,
+                "js": 0.22439685017102046,
+                "tv": 0.41436019422798176,
+                "argmax_disagree": 0.43724053724053724,
+                "joint_sym_kl": 12.786869995845974,
+                "joint_js_sum": 1.3463811010261268,
+                "joint_tv_bound": 0.9148057517881308,
+                "joint_any_argmax_disagree": 0.9047619047619048,
+                "probe_win_rate": 1.0,
+                "episodes": 20,
+                "steps": 1365,
+                "agent_steps": 8190,
+                "alpha": 1.0
+              }
+            ]
+          },
+          {
+            "seed": 4,
+            "method_a": "mappo_to_mappo_nonshared_stage2",
+            "method_b": "mappo_to_happo_nonshared_stage2",
+            "description": "MAPPO-ns \u2192 M2H (same source, both decoupled)",
+            "existing_barrier": 0.0,
+            "existing_wr": [
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "weight_metrics": {
+              "mean_l2": 14.207481861114502,
+              "mean_normalized_l2": 0.17164602627356848,
+              "mean_cosine": 0.9410346150398254,
+              "per_agent": [
+                {
+                  "l2": 14.579102516174316,
+                  "normalized_l2": 0.17610473930835724,
+                  "cosine": 0.9379749894142151
+                },
+                {
+                  "l2": 14.502918243408203,
+                  "normalized_l2": 0.1749289631843567,
+                  "cosine": 0.9388020038604736
+                },
+                {
+                  "l2": 13.571043014526367,
+                  "normalized_l2": 0.1642942577600479,
+                  "cosine": 0.9460179805755615
+                },
+                {
+                  "l2": 13.882831573486328,
+                  "normalized_l2": 0.1680276244878769,
+                  "cosine": 0.9435380101203918
+                },
+                {
+                  "l2": 14.040696144104004,
+                  "normalized_l2": 0.16959217190742493,
+                  "cosine": 0.942479133605957
+                },
+                {
+                  "l2": 14.668299674987793,
+                  "normalized_l2": 0.17692840099334717,
+                  "cosine": 0.9373955726623535
+                }
+              ]
+            },
+            "alpha_metrics": [
+              {
+                "kl_ab": 1.0050767595754388,
+                "kl_ba": 1.1155763995847117,
+                "sym_kl": 1.0603265795800756,
+                "js": 0.1376952604536938,
+                "tv": 0.27285474798837656,
+                "argmax_disagree": 0.2762854950115119,
+                "joint_sym_kl": 6.361959477480449,
+                "joint_js_sum": 0.8261715627221649,
+                "joint_tv_bound": 0.8059384373900124,
+                "joint_any_argmax_disagree": 0.7513430544896393,
+                "probe_win_rate": 1.0,
+                "episodes": 20,
+                "steps": 1303,
+                "agent_steps": 7818,
+                "alpha": 0.0
+              },
+              {
+                "kl_ab": 0.8980126671854474,
+                "kl_ba": 0.8286098652220106,
+                "sym_kl": 0.863311266203729,
+                "js": 0.11422644366164256,
+                "tv": 0.23681835358038317,
+                "argmax_disagree": 0.23116615067079463,
+                "joint_sym_kl": 5.1798675972223895,
+                "joint_js_sum": 0.6853586619698546,
+                "joint_tv_bound": 0.8031513358042728,
+                "joint_any_argmax_disagree": 0.75,
+                "probe_win_rate": 1.0,
+                "episodes": 20,
+                "steps": 1292,
+                "agent_steps": 7752,
+                "alpha": 0.5
+              },
+              {
+                "kl_ab": 1.126742727743244,
+                "kl_ba": 0.8765193860037044,
+                "sym_kl": 1.001631056873476,
+                "js": 0.1298958780055857,
+                "tv": 0.26187771373605007,
+                "argmax_disagree": 0.26244343891402716,
+                "joint_sym_kl": 6.009786341240854,
+                "joint_js_sum": 0.779375268033512,
+                "joint_tv_bound": 0.8095452596448838,
+                "joint_any_argmax_disagree": 0.7692307692307693,
+                "probe_win_rate": 1.0,
+                "episodes": 20,
+                "steps": 1326,
+                "agent_steps": 7956,
+                "alpha": 1.0
+              }
+            ]
+          }
+        ],
+        "summary": {
+          "n_seeds": 4,
+          "mean_existing_barrier": 0.01999999999999999,
+          "mean_weight_normalized_l2": 0.17662660653392476,
+          "mean_weight_cosine": 0.9375455776850382,
+          "alpha_summary": [
+            {
+              "alpha": 0.0,
+              "mean_js": 0.1597768288057666,
+              "mean_tv": 0.31334321113651203,
+              "mean_sym_kl": 1.33265570316906,
+              "mean_joint_sym_kl": 7.9959342190143605,
+              "mean_action_disagreement": 0.327024321079911,
+              "mean_probe_win_rate": 1.0
+            },
+            {
+              "alpha": 0.5,
+              "mean_js": 0.1477148245326218,
+              "mean_tv": 0.2950932309455668,
+              "mean_sym_kl": 1.2480331333317196,
+              "mean_joint_sym_kl": 7.488198799990316,
+              "mean_action_disagreement": 0.3013003613409516,
+              "mean_probe_win_rate": 1.0
+            },
+            {
+              "alpha": 1.0,
+              "mean_js": 0.16221669426547197,
+              "mean_tv": 0.316260461385641,
+              "mean_sym_kl": 1.3955661280911094,
+              "mean_joint_sym_kl": 8.373396768546652,
+              "mean_action_disagreement": 0.33108265365270884,
+              "mean_probe_win_rate": 1.0
+            }
+          ]
+        }
+      },
+      "P7": {
+        "description": "MAPPO-ns \u2192 HAPPO (decoupled vs independent)",
+        "method_a": "mappo_to_mappo_nonshared_stage2",
+        "method_b": "happo_nonshared_full",
+        "seeds": [
+          {
+            "seed": 1,
+            "method_a": "mappo_to_mappo_nonshared_stage2",
+            "method_b": "happo_nonshared_full",
+            "description": "MAPPO-ns \u2192 HAPPO (decoupled vs independent)",
+            "existing_barrier": 1.0,
+            "existing_wr": [
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.75,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "weight_metrics": {
+              "mean_l2": 43.05438709259033,
+              "mean_normalized_l2": 0.5258740286032358,
+              "mean_cosine": 0.43998828530311584,
+              "per_agent": [
+                {
+                  "l2": 31.67918586730957,
+                  "normalized_l2": 0.38557612895965576,
+                  "cosine": 0.7034905552864075
+                },
+                {
+                  "l2": 45.566734313964844,
+                  "normalized_l2": 0.5545375943183899,
+                  "cosine": 0.3856969475746155
+                },
+                {
+                  "l2": 45.51136779785156,
+                  "normalized_l2": 0.5554990768432617,
+                  "cosine": 0.38390639424324036
+                },
+                {
+                  "l2": 45.23794174194336,
+                  "normalized_l2": 0.5534457564353943,
+                  "cosine": 0.3885435163974762
+                },
+                {
+                  "l2": 44.920352935791016,
+                  "normalized_l2": 0.5512133240699768,
+                  "cosine": 0.39322882890701294
+                },
+                {
+                  "l2": 45.41073989868164,
+                  "normalized_l2": 0.5549722909927368,
+                  "cosine": 0.3850634694099426
+                }
+              ]
+            },
+            "alpha_metrics": [
+              {
+                "kl_ab": 6.049283550197077,
+                "kl_ba": 6.515237755838016,
+                "sym_kl": 6.282260653017538,
+                "js": 0.4553075329968941,
+                "tv": 0.7260584348542605,
+                "argmax_disagree": 0.748572846860263,
+                "joint_sym_kl": 37.693563918105106,
+                "joint_js_sum": 2.731845197981363,
+                "joint_tv_bound": 0.9993967767130396,
+                "joint_any_argmax_disagree": 0.9992553983618764,
+                "probe_win_rate": 1.0,
+                "episodes": 20,
+                "steps": 1343,
+                "agent_steps": 8058,
+                "alpha": 0.0
+              },
+              {
+                "kl_ab": 6.652926243556378,
+                "kl_ba": 6.112087689280322,
+                "sym_kl": 6.3825069664183385,
+                "js": 0.3555965089319298,
+                "tv": 0.536382544154957,
+                "argmax_disagree": 0.5430680885972108,
+                "joint_sym_kl": 38.29504179850999,
+                "joint_js_sum": 2.1335790535915797,
+                "joint_tv_bound": 0.9612004757050278,
+                "joint_any_argmax_disagree": 0.9639048400328137,
+                "probe_win_rate": 0.0,
+                "episodes": 20,
+                "steps": 1219,
+                "agent_steps": 7314,
+                "alpha": 0.5
+              },
+              {
+                "kl_ab": 5.860400982439755,
+                "kl_ba": 4.54377984246532,
+                "sym_kl": 5.202090412452509,
+                "js": 0.38692740939719283,
+                "tv": 0.642478100750228,
+                "argmax_disagree": 0.6609876543209876,
+                "joint_sym_kl": 31.21254247471516,
+                "joint_js_sum": 2.3215644563831566,
+                "joint_tv_bound": 0.9968441652552401,
+                "joint_any_argmax_disagree": 0.9940740740740741,
+                "probe_win_rate": 1.0,
+                "episodes": 20,
+                "steps": 1350,
+                "agent_steps": 8100,
+                "alpha": 1.0
+              }
+            ]
+          },
+          {
+            "seed": 2,
+            "method_a": "mappo_to_mappo_nonshared_stage2",
+            "method_b": "happo_nonshared_full",
+            "description": "MAPPO-ns \u2192 HAPPO (decoupled vs independent)",
+            "existing_barrier": 0.99,
+            "existing_wr": [
+              0.99,
+              1.0,
+              1.0,
+              0.74,
+              0.0,
+              0.0,
+              0.75,
+              1.0,
+              0.99,
+              0.74,
+              1.0
+            ],
+            "weight_metrics": {
+              "mean_l2": 42.693065325419106,
+              "mean_normalized_l2": 0.5243557492891947,
+              "mean_cosine": 0.44349409143129986,
+              "per_agent": [
+                {
+                  "l2": 31.868196487426758,
+                  "normalized_l2": 0.39150869846343994,
+                  "cosine": 0.6938232183456421
+                },
+                {
+                  "l2": 44.320125579833984,
+                  "normalized_l2": 0.5521345138549805,
+                  "cosine": 0.3918982148170471
+                },
+                {
+                  "l2": 45.20271301269531,
+                  "normalized_l2": 0.554266631603241,
+                  "cosine": 0.38584932684898376
+                },
+                {
+                  "l2": 45.08391189575195,
+                  "normalized_l2": 0.550744891166687,
+                  "cosine": 0.39349544048309326
+                },
+                {
+                  "l2": 44.92183303833008,
+                  "normalized_l2": 0.5493176579475403,
+                  "cosine": 0.39661118388175964
+                },
+                {
+                  "l2": 44.76161193847656,
+                  "normalized_l2": 0.5481621026992798,
+                  "cosine": 0.3992871642112732
+                }
+              ]
+            },
+            "alpha_metrics": [
+              {
+                "kl_ab": 5.824063159737551,
+                "kl_ba": 7.2955801672071665,
+                "sym_kl": 6.559821663472374,
+                "js": 0.46934143706856934,
+                "tv": 0.734387293451265,
+                "argmax_disagree": 0.753183520599251,
+                "joint_sym_kl": 39.358929980834155,
+                "joint_js_sum": 2.81604862241141,
+                "joint_tv_bound": 0.99969710874027,
+                "joint_any_argmax_disagree": 0.9992509363295881,
+                "probe_win_rate": 1.0,
+                "episodes": 20,
+                "steps": 1335,
+                "agent_steps": 8010,
+                "alpha": 0.0
+              },
+              {
+                "kl_ab": 2.601309885653885,
+                "kl_ba": 2.31173247166431,
+                "sym_kl": 2.4565211786590524,
+                "js": 0.18783898244392805,
+                "tv": 0.30437256666596346,
+                "argmax_disagree": 0.3118508026440038,
+                "joint_sym_kl": 14.739127071954318,
+                "joint_js_sum": 1.1270338946635663,
+                "joint_tv_bound": 0.7603807426907337,
+                "joint_any_argmax_disagree": 0.7799811142587346,
+                "probe_win_rate": 0.0,
+                "episodes": 20,
+                "steps": 2118,
+                "agent_steps": 12708,
+                "alpha": 0.5
+              },
+              {
+                "kl_ab": 3.761313872197173,
+                "kl_ba": 3.2173221380931643,
+                "sym_kl": 3.4893180051451815,
+                "js": 0.27719837863126856,
+                "tv": 0.46333830726875325,
+                "argmax_disagree": 0.473221670802316,
+                "joint_sym_kl": 20.935908030871023,
+                "joint_js_sum": 1.6631902717876068,
+                "joint_tv_bound": 0.97452907350208,
+                "joint_any_argmax_disagree": 0.9621588089330024,
+                "probe_win_rate": 0.95,
+                "episodes": 20,
+                "steps": 1612,
+                "agent_steps": 9672,
+                "alpha": 1.0
+              }
+            ]
+          },
+          {
+            "seed": 3,
+            "method_a": "mappo_to_mappo_nonshared_stage2",
+            "method_b": "happo_nonshared_full",
+            "description": "MAPPO-ns \u2192 HAPPO (decoupled vs independent)",
+            "existing_barrier": 1.0,
+            "existing_wr": [
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              0.0,
+              0.0,
+              0.46,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "weight_metrics": {
+              "mean_l2": 42.4311196009318,
+              "mean_normalized_l2": 0.5251099914312363,
+              "mean_cosine": 0.4417884200811386,
+              "per_agent": [
+                {
+                  "l2": 31.64768409729004,
+                  "normalized_l2": 0.3897635042667389,
+                  "cosine": 0.6965761780738831
+                },
+                {
+                  "l2": 44.05174255371094,
+                  "normalized_l2": 0.5494178533554077,
+                  "cosine": 0.3973419964313507
+                },
+                {
+                  "l2": 45.137939453125,
+                  "normalized_l2": 0.5554265975952148,
+                  "cosine": 0.3833412826061249
+                },
+                {
+                  "l2": 45.04305648803711,
+                  "normalized_l2": 0.5553417205810547,
+                  "cosine": 0.38358137011528015
+                },
+                {
+                  "l2": 44.480770111083984,
+                  "normalized_l2": 0.5516023635864258,
+                  "cosine": 0.39212289452552795
+                },
+                {
+                  "l2": 44.22552490234375,
+                  "normalized_l2": 0.5491079092025757,
+                  "cosine": 0.3977667987346649
+                }
+              ]
+            },
+            "alpha_metrics": [
+              {
+                "kl_ab": 3.9586519787907672,
+                "kl_ba": 4.443870050860107,
+                "sym_kl": 4.2012610148254455,
+                "js": 0.3469760489629304,
+                "tv": 0.5779057567890554,
+                "argmax_disagree": 0.6054990310077519,
+                "joint_sym_kl": 25.207566088952714,
+                "joint_js_sum": 2.0818562937775917,
+                "joint_tv_bound": 0.960968138778171,
+                "joint_any_argmax_disagree": 0.9563953488372093,
+                "probe_win_rate": 1.0,
+                "episodes": 20,
+                "steps": 1376,
+                "agent_steps": 8256,
+                "alpha": 0.0
+              },
+              {
+                "kl_ab": 4.340327761665357,
+                "kl_ba": 3.764387119228339,
+                "sym_kl": 4.052357440446864,
+                "js": 0.27692643494371844,
+                "tv": 0.43464577369514784,
+                "argmax_disagree": 0.44429097605893186,
+                "joint_sym_kl": 24.31414464268121,
+                "joint_js_sum": 1.6615586096623098,
+                "joint_tv_bound": 0.9058368473717653,
+                "joint_any_argmax_disagree": 0.9069981583793738,
+                "probe_win_rate": 0.0,
+                "episodes": 20,
+                "steps": 1086,
+                "agent_steps": 6516,
+                "alpha": 0.5
+              },
+              {
+                "kl_ab": 4.540185777551987,
+                "kl_ba": 3.206437933383201,
+                "sym_kl": 3.8733118554676027,
+                "js": 0.32011380834216524,
+                "tv": 0.5483733987250499,
+                "argmax_disagree": 0.5722182167748138,
+                "joint_sym_kl": 23.239871132805575,
+                "joint_js_sum": 1.9206828500529909,
+                "joint_tv_bound": 0.9537628522672994,
+                "joint_any_argmax_disagree": 0.9322278298485941,
+                "probe_win_rate": 1.0,
+                "episodes": 20,
+                "steps": 1387,
+                "agent_steps": 8322,
+                "alpha": 1.0
+              }
+            ]
+          },
+          {
+            "seed": 4,
+            "method_a": "mappo_to_mappo_nonshared_stage2",
+            "method_b": "happo_nonshared_full",
+            "description": "MAPPO-ns \u2192 HAPPO (decoupled vs independent)",
+            "existing_barrier": 1.0,
+            "existing_wr": [
+              1.0,
+              1.0,
+              1.0,
+              0.5,
+              0.25,
+              0.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "weight_metrics": {
+              "mean_l2": 42.47865835825602,
+              "mean_normalized_l2": 0.5211713860432307,
+              "mean_cosine": 0.44963112970193225,
+              "per_agent": [
+                {
+                  "l2": 31.54188346862793,
+                  "normalized_l2": 0.38417848944664,
+                  "cosine": 0.7049329280853271
+                },
+                {
+                  "l2": 44.638427734375,
+                  "normalized_l2": 0.5480892062187195,
+                  "cosine": 0.3996044993400574
+                },
+                {
+                  "l2": 44.099212646484375,
+                  "normalized_l2": 0.5481582283973694,
+                  "cosine": 0.40014082193374634
+                },
+                {
+                  "l2": 44.80387496948242,
+                  "normalized_l2": 0.549748957157135,
+                  "cosine": 0.3957659602165222
+                },
+                {
+                  "l2": 44.72623062133789,
+                  "normalized_l2": 0.5478229522705078,
+                  "cosine": 0.4000973701477051
+                },
+                {
+                  "l2": 45.062320709228516,
+                  "normalized_l2": 0.5490304827690125,
+                  "cosine": 0.3972451984882355
+                }
+              ]
+            },
+            "alpha_metrics": [
+              {
+                "kl_ab": 4.820038166250609,
+                "kl_ba": 5.550089192181029,
+                "sym_kl": 5.185063679215814,
+                "js": 0.4096319507748302,
+                "tv": 0.6589929786856543,
+                "argmax_disagree": 0.6731900741877718,
+                "joint_sym_kl": 31.11038207529495,
+                "joint_js_sum": 2.457791704648977,
+                "joint_tv_bound": 0.9989094512032727,
+                "joint_any_argmax_disagree": 0.9969301611665388,
+                "probe_win_rate": 1.0,
+                "episodes": 20,
+                "steps": 1303,
+                "agent_steps": 7818,
+                "alpha": 0.0
+              },
+              {
+                "kl_ab": 2.707799008236908,
+                "kl_ba": 2.62588949270762,
+                "sym_kl": 2.6668442504722862,
+                "js": 0.20513681389475064,
+                "tv": 0.3250875108248011,
+                "argmax_disagree": 0.3259132420091324,
+                "joint_sym_kl": 16.001065502833676,
+                "joint_js_sum": 1.2308208833684988,
+                "joint_tv_bound": 0.9069959291044205,
+                "joint_any_argmax_disagree": 0.9045988258317026,
+                "probe_win_rate": 0.0,
+                "episodes": 20,
+                "steps": 2044,
+                "agent_steps": 12264,
+                "alpha": 0.5
+              },
+              {
+                "kl_ab": 3.929712708716808,
+                "kl_ba": 3.177639631525062,
+                "sym_kl": 3.553676170120928,
+                "js": 0.27740512029406517,
+                "tv": 0.47879450002701,
+                "argmax_disagree": 0.4707351891506067,
+                "joint_sym_kl": 21.322057020725634,
+                "joint_js_sum": 1.6644307217643945,
+                "joint_tv_bound": 0.9876459339032808,
+                "joint_any_argmax_disagree": 0.9635974304068522,
+                "probe_win_rate": 1.0,
+                "episodes": 20,
+                "steps": 1401,
+                "agent_steps": 8406,
+                "alpha": 1.0
+              }
+            ]
+          }
+        ],
+        "summary": {
+          "n_seeds": 4,
+          "mean_existing_barrier": 0.9975,
+          "mean_weight_normalized_l2": 0.5241277888417244,
+          "mean_weight_cosine": 0.44372548162937164,
+          "alpha_summary": [
+            {
+              "alpha": 0.0,
+              "mean_js": 0.420314242450806,
+              "mean_tv": 0.6743361159450588,
+              "mean_sym_kl": 5.557101752632793,
+              "mean_joint_sym_kl": 33.342610515796736,
+              "mean_action_disagreement": 0.6951113681637594,
+              "mean_probe_win_rate": 1.0
+            },
+            {
+              "alpha": 0.5,
+              "mean_js": 0.25637468505358174,
+              "mean_tv": 0.4001220988352173,
+              "mean_sym_kl": 3.889557458999135,
+              "mean_joint_sym_kl": 23.3373447539948,
+              "mean_action_disagreement": 0.4062807773273197,
+              "mean_probe_win_rate": 0.0
+            },
+            {
+              "alpha": 1.0,
+              "mean_js": 0.315411179166173,
+              "mean_tv": 0.5332460766927603,
+              "mean_sym_kl": 4.029599110796555,
+              "mean_joint_sym_kl": 24.17759466477935,
+              "mean_action_disagreement": 0.5442906827621811,
+              "mean_probe_win_rate": 0.9875
+            }
+          ]
+        }
+      }
+    }
+  }
+}

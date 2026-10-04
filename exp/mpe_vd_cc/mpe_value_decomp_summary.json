@@ -1,0 +1,72 @@
+{
+  "vdn": {
+    "file": "exp/mpe_vd_cc/mpe_vd_cc_simple_reference_v2_vdn_seed1_src2000_br1000.json",
+    "endpoint_eval": {
+      "branch_a": {
+        "mean_return": -52.565880956441205,
+        "std_return": 18.161499250475586
+      },
+      "branch_b": {
+        "mean_return": -49.93056144183317,
+        "std_return": 23.068209140884548
+      },
+      "scratch": {
+        "mean_return": -47.64729679232709,
+        "std_return": 17.174276621162317
+      }
+    },
+    "paths": [
+      {
+        "name": "VDN same-source A <-> B",
+        "return_barrier": 4.176374601764934,
+        "endpoint_a": -48.68240722944321,
+        "endpoint_b": -48.105523462039756,
+        "min_path_return": -52.85878183120814
+      },
+      {
+        "name": "VDN branch-A <-> scratch",
+        "return_barrier": 23.758988757312927,
+        "endpoint_a": -48.68240722944321,
+        "endpoint_b": -47.78493923730116,
+        "min_path_return": -72.44139598675613
+      }
+    ],
+    "usable_for_rebuttal": true,
+    "note": "single-seed value-decomposition sanity; endpoints moderate, use cautiously"
+  },
+  "qmix": {
+    "file": "exp/mpe_vd_cc/mpe_vd_cc_simple_reference_v2_qmix_seed1_src2000_br1000.json",
+    "endpoint_eval": {
+      "branch_a": {
+        "mean_return": -67.1782536382967,
+        "std_return": 20.893590028671625
+      },
+      "branch_b": {
+        "mean_return": -77.01291421444805,
+        "std_return": 25.643243071477052
+      },
+      "scratch": {
+        "mean_return": -88.51220506694823,
+        "std_return": 26.30032753196299
+      }
+    },
+    "paths": [
+      {
+        "name": "QMIX same-source A <-> B",
+        "return_barrier": 3.5826528218527898,
+        "endpoint_a": -65.76058362309,
+        "endpoint_b": -73.01741309876552,
+        "min_path_return": -76.6000659206183
+      },
+      {
+        "name": "QMIX branch-A <-> scratch",
+        "return_barrier": 0.0,
+        "endpoint_a": -65.76058362309,
+        "endpoint_b": -82.3346878705636,
+        "min_path_return": -82.3346878705636
+      }
+    ],
+    "usable_for_rebuttal": false,
+    "note": "endpoint quality poor; do not use as positive evidence"
+  }
+}
