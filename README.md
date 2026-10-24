@@ -44,12 +44,12 @@ python scripts/regenerate_figures_type42.py        # figures 2-3, appendix figur
 python scripts/make_behavior_divergence_figure.py  # figure 4
 python scripts/make_mpe_interpolation_figure.py    # figure 9 (both panels)
 python scripts/make_hotswap_figure.py              # appendix figure 6, camera-ready style (no in-bar labels)
+python scripts/make_vdn_figure.py                  # appendix figure 10 (VDN pilot)
 python scripts/make_behavior_summary_table.py      # table 8
 ```
 
-Figure 1 is a hand-made schematic; appendix figure 10 (VDN pilot) is produced
-by `exp_mpe_value_decomp_cc.py` during the run. Figure/table reproduction
-requires only Python 3.8+, numpy, and matplotlib.
+Figure 1 is a hand-made schematic. Figure/table reproduction requires only
+Python 3.8+, numpy, and matplotlib.
 
 ## Re-running experiments
 
@@ -70,3 +70,10 @@ and are self-contained otherwise; protocols are described in Appendix E.
 
 Evaluation protocol: greedy (deterministic) actions, 100 episodes per
 interpolation point on SMAC, 50 on MPE, seeds 1-4, alpha grid {0, 0.1, ..., 1.0}.
+
+## License
+
+The code and result data in this repository are released under the MIT License
+(see `LICENSE`). Third-party dependencies are installed separately and are not
+distributed here: HARL (MIT), PettingZoo (MIT), SMAC (MIT), and StarCraft II,
+which is subject to Blizzard's own end-user license agreement.

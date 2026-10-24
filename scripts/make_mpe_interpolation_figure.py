@@ -14,8 +14,8 @@ OUT_DIR = PROJECT_DIR / "paper" / "11_6.22"
 OUT_DIR.mkdir(parents=True, exist_ok=True)  # allow running from a standalone checkout
 
 SCENARIOS = {
-    "simple_reference_v2": "fig9_mpe_reference",
-    "simple_spread_v2": "fig9_mpe_spread",
+    "simple_reference_v2": ("fig9_mpe_reference", "MPE Reference ($N=2$)"),
+    "simple_spread_v2": ("fig9_mpe_spread", "MPE Spread ($N=3$)"),
 }
 
 STYLE = {  # path id -> (paper-consistent label, color, linestyle)
@@ -32,9 +32,14 @@ plt.rcParams.update({
     "legend.fontsize": 9,
     "pdf.fonttype": 42,  # embed TrueType fonts for camera-ready
     "ps.fonttype": 42,
+    "font.family": "serif",  # match the serif style of the main-paper figures
+    "font.serif": ["DejaVu Serif"],
+    "mathtext.fontset": "dejavuserif",
+    "axes.titleweight": "bold",
+    "axes.labelweight": "bold",
 })
 
-for scenario, out_name in SCENARIOS.items():
+for scenario, (out_name, title) in SCENARIOS.items():
     data = json.load(open(SRC_DIR / f"mpe_cc_{scenario}_expanded.json"))
     fig, ax = plt.subplots(figsize=(6.4, 4.0), dpi=230)
     for pid, (label, color, ls) in STYLE.items():
@@ -49,7 +54,7 @@ for scenario, out_name in SCENARIOS.items():
                         alpha=0.15, linewidth=0)  # +/- 1 cross-seed std, as stated in the caption
     ax.set_xlabel("Interpolation coefficient $\\alpha$")
     ax.set_ylabel("Mean return (higher is better)")
-    ax.set_title(f"MPE {scenario}: coordination connectivity")
+    ax.set_title(title)
     ax.set_xlim(-0.02, 1.02)
     ax.grid(True, alpha=0.25)
     ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.14), ncol=2,
